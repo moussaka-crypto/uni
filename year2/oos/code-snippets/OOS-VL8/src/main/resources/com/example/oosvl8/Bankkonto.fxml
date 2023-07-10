@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oosvl8.BankkontoController">
+   <children>
+      <GridPane layoutX="37.0" layoutY="78.0" prefHeight="244.0" prefWidth="527.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <FlowPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="92.0" text="Kontostand" />
+                  <TextField fx:id="kontoStandFeld" prefHeight="34.0" prefWidth="96.0" />
+               </children>
+            </FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="87.0" text="Betrag" />
+                  <TextField fx:id="betragFeld" prefHeight="38.0" prefWidth="96.0" />
+               </children></FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="einzahlenButton" mnemonicParsing="false" onAction="#einzahlen" text="einzahlen" />
+               </children></FlowPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

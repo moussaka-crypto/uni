@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<style>
+    fieldset{width: 500px}
+</style>
+<body>
+<h1>Willkommen</h1>
+<form action="/ausertung.php" method="post">
+    <fieldset>
+        <legend>Anmeldung</legend>
+        <label for="benutzername">Benutzername:</label>
+        <input id="benutzername" maxlength="80"><br>
+        <label for="passwort">Passwort:</label>
+        <input id="passwort" value="passwort" type="password"><br>
+        <a href="/passwortzuruecksetzen">Passwort vergessen</a><br>
+        <select name="sprache" value="sprache">
+            <option value = "DE">Deutsch</option>
+            <option value="EN">Englisch</option>
+        </select><br>
+        <input type="submit" value="Abschicken">
+    </fieldset>
+</form>
+
+<h1>HTML Forms</h1>
+<form method="post" action="https://adresse.com">
+    <label for="fname">First Name:</label><br>
+    <input id="fname" maxlength="80" required><br>
+    <label for="email">Email:</label><br>
+    <input id="email" type="email"><br><br>
+    <label for="desc">Description</label><br>
+    <textarea id="desc" rows="4" cols="80"></textarea><br><br>
+    <button type="submit">Abschicken</button>
+    <a href="https://server.com">Neues Produkt hinzuf&uuml;gen</a>
+</form>
+</body>
+</html>
