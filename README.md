@@ -46,7 +46,7 @@
        * IO-multiplexing implemented with Timebase for a 7-segment display 
        * 2 separate implementations for Pre-Emptive-Multitasking with Mutex and Semaphore
     
-   * #### _bwl_ (Business Administration for CS) - Excel spreadsheets mandatory for participation in a backpack-business simulator
+   * #### _bwl_ (Business Administration for CS) - Excel spreadsheets useful for a backpack business simulator
        * Inverse Demand Function
        * Credit Financing
        * Temporary Workers
