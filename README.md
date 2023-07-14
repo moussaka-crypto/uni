@@ -74,7 +74,7 @@
        * Automated Documentation
        * Project Specifications written in LaTeX
     
-   * #### _te_ (Ethics of technology)
+   * #### _te_ (Ethics of Technology)
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself 
