@@ -61,6 +61,8 @@
        * Final presentation
        * Semester projects Docs
     
+   * #### _ip_ (Interdisciplinary Project) - Sales Reference Process Development
+    
    * #### _its2_ (IT-Security 2)
        * cheat sheets for exam and semester projects
        * projects themselves were done on Kali Linux Machines on Campus
