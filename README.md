@@ -17,7 +17,7 @@
        * Projects due every week to learn and implement certain programming concepts in C++ (_Praktikum_)
        * Programming exercises, 80% of which were mandatory to attend the exam (_Jenkins_)
  
-   * #### _m2_ (Advanced Mathematics 2) - a collection of programming assignments in Calculus, Linear Algebra and Statistics
+   * #### _m2_ (Advanced Mathematics 2) - coding assignments in Calculus, Linear Algebra and Statistics
        * Euler and Heun methods for finding numerical solutions of differential equations
        * Fourier forward and backward Transformation
        * Gradient Method with adaptive step sizes
@@ -46,7 +46,7 @@
        * IO-multiplexing implemented with Timebase for a 7-segment display 
        * 2 separate implementations for Pre-Emptive-Multitasking with Mutex and Semaphore
     
-   * #### _bwl_ (Business Administration for CS) - Excel spreadsheets useful for a backpack business simulator
+   * #### _bwl_ (Business Administration for CS) - Spreadsheets useful for a backpack business simulator
        * Inverse Demand Function
        * Credit Financing
        * Temporary Workers
@@ -62,6 +62,10 @@
        * Semester projects Docs
     
    * #### _ip_ (Interdisciplinary Project) - Sales Reference Process Development
+       * A BPMN guide
+       * An image of the final reference process framework
+       * All individual reference models and merged model
+       * Project Presentation 
     
    * #### _its2_ (IT-Security 2)
        * cheat sheets for exam and semester projects
