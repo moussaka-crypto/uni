@@ -56,6 +56,12 @@
        * Peer Review
        * Simple HTML Forms
        * Example for a quiz at the beginning of every lecture
+   
+   * #### _devops_ (Development for Operations)
+       * 2 Docker images (one each for web application and database)
+       * a script file to initialise the database and then start the application (start_app.sh)
+       * a script file to create a user and a table for the database (start_mysql.sh)
+       * Selenium tests in Java and Python
     
    * #### _fitu_ (IT-Management)
        * Final presentation
