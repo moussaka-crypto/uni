@@ -1,0 +1,20 @@
+version: "3"
+services:
+  appv2:
+    image: localhost:5000/appv2
+    networks:
+      - network
+    ports:
+      - 8000:8000
+    depends_on:
+      - mysql
+    deploy:
+      replicas: 3
+  mysql:
+    image: localhost:5000/mysql
+    networks:
+      - network
+
+networks:
+  network:
+    driver: overlay
