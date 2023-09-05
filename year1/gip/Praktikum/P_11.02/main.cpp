@@ -1,6 +1,6 @@
 #include <iostream>
 #define CIMGGIP_MAIN
-#include "CImgGIP06.h"
+
 #include "MyRectangle.h"
 #include "MyFilledRectangle.h"
 using namespace std;

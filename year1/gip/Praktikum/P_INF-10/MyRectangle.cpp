@@ -59,7 +59,7 @@ MyRectangle::MyRectangle()
 
 void MyRectangle::draw() const
 {
-	gip_draw_rectangle(x1, y1, x2, y2, indigo);
+	gip_draw_rectangle(x1, y1, x2, y2, red);
 	//white, black, red, green, blue, indigo, cyan, brown
 }
 
