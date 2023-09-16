@@ -100,21 +100,22 @@ _projects/assignments from other courses done on the side, no guarantee for comp
        - Dataframes with the Iris Dataset
     
    - #### _crypto_ (Cryptology)
-       - Assignments from Cryptology course
+       - Assignments from _Cryptology_ course
        - Implementations in [Aribas](https://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html) and [Python](https://www.python.org/)
     
    - #### _ees_ (Embedded Software)
-       - Buggy semester project from Embedded Software course
+       - Buggy semester project from _Embedded Software_ course
     
    - #### _infth_ (Information Theory)
-       - Programming assignments from Information Theory course
+       - Programming assignments from _Information Theory_ course
    
-   - #### _kmps_ (Modern programming languages)
-       - Java
-       - Scala
-       - Go
-       - Phoenix web development framework (Elixir)
-    
+   - #### _kmps_ (Fundamentals of modern programming languages)
+       - Converting an imperative program into a functional program (Java)
+       - Convert Java code ([Scala](https://www.scala-lang.org/))
+       - Implement Higher Order Functions ([Scala](https://www.scala-lang.org/))
+       - Asynchronous Web Socket Communication ([Go](https://go.dev/))
+       - Counter App ([Phoenix Web Framework](https://www.phoenixframework.org/)) & Chat App ([Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view))
+      
    - #### _png2pdf_ (A png to pdf file converter in Python)
        - From a folder with *.PNG image files **all images are merged into one PDF.**
     
