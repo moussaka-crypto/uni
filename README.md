@@ -100,14 +100,14 @@ _projects/assignments from other courses done on the side, no guarantee for comp
        - Dataframes with the Iris Dataset
     
    - #### _crypto_ (Cryptology)
-       - Cryptology assignments from Cryptology course
+       - Assignments from Cryptology course
        - Implementations in [Aribas](https://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html) and [Python](https://www.python.org/)
     
    - #### _ees_ (Embedded Software)
-       - Buggy Project given as an assignment in the Embedded Software course
+       - Buggy semester project from Embedded Software course
     
    - #### _infth_ (Information Theory)
-       - Programming assignments in the Information Theory course
+       - Programming assignments from Information Theory course
    
    - #### _kmps_ (Modern programming languages)
        - Java
