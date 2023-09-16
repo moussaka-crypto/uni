@@ -89,3 +89,37 @@
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself
+
+## **Side**
+_projects/assignments from other courses done on the side, no guarantee for completion/correctitude_
+   
+   - #### _bda1_ (Big Data Analytics 1)
+       - Map-Reduce number counter
+       - Queries with Apache Drill
+       - Queries with Apache Spark
+       - Dataframes with the Iris Dataset
+    
+   - #### _crypto_ (Cryptology)
+       - Cryptology assignments from Cryptology course
+       - Implementations in [Aribas](https://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html) and [Python](https://www.python.org/)
+    
+   - #### _ees_ (Embedded Software)
+       - Buggy Project given as an assignment in the Embedded Software course
+    
+   - #### _infth_ (Information Theory)
+       - Programming assignments in the Information Theory course
+   
+   - #### _kmps_ (Modern programming languages)
+       - Java
+       - Scala
+       - Go
+       - Phoenix web development framework (Elixir)
+    
+   - #### _png2pdf_ (A png to pdf file converter in Python)
+       - From a folder with *.PNG image files **all images are merged into one PDF.**
+    
+   - #### _port-scanner_ (A port scanner script in Python)
+       - Inspired by IT-Security 2 lecture (;
+    
+   - #### _space-survival_ (A modified Programming Basics assignment)
+       - A slightly modified version of an assignment to include asteroids in a space survival mini-game.
