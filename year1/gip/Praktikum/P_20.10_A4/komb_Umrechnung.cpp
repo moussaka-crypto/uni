@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	double eingabe, temp_F, laenge_Fuss, geld_USD;
-	int auswahl;
+	int a;
 
 	cout << "Ihre Eingabe: ? ";
 	cin >> eingabe;
@@ -14,7 +14,8 @@ int main()
 	cout << " 2 - Meter in Fuss" << endl; 
 	cout << " 3 - Euro in US Dollar" << endl;
 	
-	cin >> auswahl;
+	cin >> a;
+	double auswahl = (double)a;
 
 	temp_F = ((3-auswahl)*0.5) * (2-auswahl) * ((eingabe * 1.8) + 32); //(3-1)*0.5 * (2-1) fuer auswahl == 1, alle andere Faelle == 0
 	laenge_Fuss = (auswahl-1) * (3-auswahl) * (eingabe * 3.2808); //(1-2) * (3-2) fuer auswahl == 2, alle andere Faelle == 0
