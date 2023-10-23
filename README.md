@@ -89,35 +89,6 @@
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself
-
-## **Side**
-_projects/assignments from other courses done on the side, no guarantee for completion/correctitude_
-   
-   - #### _bda1_ (Big Data Analytics 1)
-       - Map-Reduce number counter
-       - Queries with Apache Drill
-       - Queries with Apache Spark
-       - Dataframes with the Iris Dataset
-    
-   - #### _crypto_ (Cryptology)
-       - Assignments from _Cryptology_ course
-       - Implementations in [Aribas](https://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html) and [Python](https://www.python.org/)
-    
-   - #### _ees_ (Embedded Software)
-       - Buggy semester project from _Embedded Software_ course
-    
-   - #### _infth_ (Information Theory)
-       - Programming assignments from _Information Theory_ course
-   
-   - #### _kmps_ (Fundamentals of modern programming languages)
-       - Converting an imperative program into a functional program (Java)
-       - Convert Java code ([Scala](https://www.scala-lang.org/))
-       - Implement Higher Order Functions ([Scala](https://www.scala-lang.org/))
-       - Asynchronous Web Socket Communication ([Go](https://go.dev/))
-       - Counter App ([Phoenix Web Framework](https://www.phoenixframework.org/)) & Chat App ([Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view))
-      
-   - #### _png2pdf_ (A png to pdf file converter in Python)
-       - From a folder with *.PNG image files **all images are merged into one PDF.**
     
    - #### _port-scanner_ (A port scanner script in Python)
        - Inspired by IT-Security 2 lecture (;
