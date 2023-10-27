@@ -89,9 +89,3 @@
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself
-    
-   - #### _port-scanner_ (A port scanner script in Python)
-       - Inspired by IT-Security 2 lecture (;
-    
-   - #### _space-survival_ (A modified Programming Basics assignment)
-       - A slightly modified version of an assignment to include asteroids in a space survival mini-game.
