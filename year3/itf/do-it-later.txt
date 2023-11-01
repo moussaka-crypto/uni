@@ -1,0 +1,3 @@
+Add ITF lecture exercises and individual Praktikum fiels after exam period.
+
+Also add Dutch notes at end of semester in a separate folder.
