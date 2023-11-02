@@ -6,10 +6,6 @@ case class Album(title: String, date: String, artist: String, tracks: List[Track
 val home = System.getProperty("user.home")
 val albums = Source.fromFile(s"$home/IdeaProjects/untitled/alben.xml").toList
 
-// println(albums.size)
-//println(albums)
-
-
 def parseTrack(source: List[String], TrackList: List[Track], myTrack: Track): List[Track] = source match {
   case "feature"::x::xs => parseTrack(xs, TrackList, myTrack.copy(features = myTrack.features :+ x))
   case "writing"::x::xs => parseTrack(xs, TrackList, myTrack.copy(writers =  myTrack.writers :+ x))
