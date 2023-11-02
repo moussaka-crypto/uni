@@ -118,20 +118,24 @@ def calculate(f: Int => Int, concat:(Int, Int)=>Int, start: Int, a:Int, b:Int):I
 
 /*
 //4.b) plus(a, plus(a2, plus(a3, plus(a4, plus(b, n)))))
-Frage1: Welches Folding wird verwendet?
-Antwort1: right-folding -> bsp: 1 + (2 + (3 + (4 + 5))) statt left-folding -> bsp: (((1 + 2) + 3) + 4) + 5
-Frage2: Unter welchen Umständen würde left-folding die Funktionalität des Programms ändern?
-Antwort2: Die Funktionalität wäre die gleiche nur die Reihenfolge der Funktionsaufrufe bzw.
+Q1: Welches Folding wird verwendet?
+A1: right-folding -> bsp: 1 + (2 + (3 + (4 + 5))) statt left-folding -> bsp: (((1 + 2) + 3) + 4) + 5
+
+Q2: Unter welchen Umständen würde left-folding die Funktionalität des Programms ändern?
+A2: Die Funktionalität wäre die gleiche nur die Reihenfolge der Funktionsaufrufe bzw.
           der Klammerung ist unterschiedlich.
 */
+
 /*
 //4.c)
-Frage1: Wie verhält sich die Implementierung aus Aufgabe 4.a) für einen leeren Wertebereich?
-Antwort1: Bei einem Wertebereich von "null" gibt es eine Fehlermeldung. Bei einem Wertebereich
+Q1: Wie verhält sich die Implementierung aus Aufgabe 4.a) für einen leeren Wertebereich?
+A1: Bei einem Wertebereich von "null" gibt es eine Fehlermeldung. Bei einem Wertebereich
 von bsp. 2 bis 2 wird mit der Zahl zwei gerechnet.
-Frage2: Welches Verhalten wäre bei einem leeren Wertebereich sinnvoll?
-Antwort2: Eine Fehlermeldung wäre sinnvoll, die aussagt, dass der Wertebereich leer ist.
+
+Q2: Welches Verhalten wäre bei einem leeren Wertebereich sinnvoll?
+A2: Eine Fehlermeldung wäre sinnvoll, die aussagt, dass der Wertebereich leer ist.
 */
+
 //4.d)
 def foldr(f:(Int,Int) => Int, start: Int, xs: List[Int]) : Int =
 xs match {
