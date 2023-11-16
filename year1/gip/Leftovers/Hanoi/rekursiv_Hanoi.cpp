@@ -10,12 +10,12 @@ void hanoi(int start, int hilfsstab, int ziel, int scheibenzahl)
 	//sonst, also wenn scheibezahl > 1
 	//angenommen scheibenzahl == 4 (oder was anderes die > 1 ist) 
 	else {
-		hanoi(start, /* hilfsstab = 2 */ ziel, /* ziel = 3 */ hilfsstab, scheibenzahl - 1);
+		hanoi(start, ziel, hilfsstab, scheibenzahl - 1);
 			// dann eine Scheibe vom start auf den ziel stab versetzen(cout)
 
 		std::cout << "Zeihe Scheibe von " << start << " nach " << ziel << std::endl;
 
-		hanoi(/* start = */ hilfsstab, /* hilfsstab = */ start, /* ziel = */ ziel, scheibenzahl - 1);
+		hanoi(hilfsstab, start, ziel, scheibenzahl - 1);
 		return;
 	}
 }
