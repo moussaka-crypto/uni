@@ -1,5 +1,6 @@
 # PythonPortScanner
 A little Port Scanner I build in Python.
+Used in IT-Security project inside a Kali VM.
 
 ```
 Usage: portScannerTest.py [OPTIONS]

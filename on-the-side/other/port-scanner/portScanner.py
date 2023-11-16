@@ -47,9 +47,6 @@ def main(host, ports, timeout):
         end_bound = a+step-1
         
         if end_bound <= y:
-            #executor.map(scan_ports, host, (a,end_bound), timeout)
-            
-            #print(f"{thread_count} Thread Started!")
             thr = threading.Thread(target=scan_ports, args=(host, (a,end_bound), timeout))
             thread_list.append(thr)
             thr.start()

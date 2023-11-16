@@ -16,4 +16,4 @@ setInterval(function () {
     {
         things.snapshotItem(i).click();
     }
-}, 500); // do it every half a second
+}, 500); // every half a second
