@@ -1,4 +1,3 @@
-# *Structure:*
 ## **Year 1**
    * #### _ads_ (Algorithms and Data Structures)
        * Doubly Linked List implementation and use case for a Twitter Console App
@@ -89,3 +88,23 @@
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself
+    
+  ## **Year 3**
+   * #### _ada_ (Applied Data Analytics)
+   * #### _bda2_ (Big Data Analytics 2)
+   * #### _devsecops_ (Development, Security and Operations)
+   * #### _itf_ (Digital Forensics)
+   * #### _fets_ (Fault-Tolerant Systems)
+
+  ## **Side projects**
+  ### **Electives**
+   * #### _bda1_ (Big Data Analytics 1)
+   * #### _crypto_ (Cryptology)
+   * #### _inf-theory_ (Information Theory)
+   * #### _kmps_ (Modern Programming Concepts)
+
+  ### **Other**
+   * #### _delete-WL_
+   * #### _png2pdf_
+   * #### _port-scanner_
+#### _For more information consult the **.README** files in each folder._
