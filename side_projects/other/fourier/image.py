@@ -2,7 +2,7 @@ from os import read
 from PIL import Image
 from fourier import *
 
-img = Image.open("./egg.png")
+img = Image.open("./img/egg.png")
 width, height = img.size
 
 def write_rgba_to_file():
@@ -71,7 +71,6 @@ def process_image(epsilon):
     r_transformed= transformed(vecR, True)
     g_transformed = transformed(vecG, True)
     b_transformed = transformed(vecB, True)
-
     write_vec_to_file(r_transformed, str(epsilon) + "_red.txt", epsilon)
     write_vec_to_file(g_transformed, str(epsilon) + "_green.txt", epsilon)
     write_vec_to_file(b_transformed, str(epsilon) + "_blue.txt", epsilon)
@@ -81,7 +80,8 @@ def process_image(epsilon):
     g_transformed = read_single_data_from_file("./data/transformed_"+ str(epsilon) + "_green.txt")
     b_transformed = read_single_data_from_file("./data/transformed_"+ str(epsilon) + "_blue.txt")
 
-    set_image_pixel(r_transformed, g_transformed, b_transformed,"./transformed_"+str(epsilon)+".png")
+    set_image_pixel(r_transformed, g_transformed, b_transformed,"./img/transformed_"+str(epsilon)+".png")
+
 
     r_back = transformed(r_transformed, False)
     g_back = transformed(g_transformed, False)
@@ -95,7 +95,7 @@ def process_image(epsilon):
     g_back = read_single_data_from_file("./data/transformed_back_"+str(epsilon)+"_green.txt")
     b_back = read_single_data_from_file("./data/transformed_back_"+str(epsilon)+"_blue.txt")
 
-    set_image_pixel(r_back, g_back, b_back, "./transformed_"+str(epsilon)+"_back.png")
+    set_image_pixel(r_back, g_back, b_back, "./img/transformed_"+str(epsilon)+"_back.png")
 
 if __name__ == "__main__": 
-    process_image(80)
+    process_image(60)

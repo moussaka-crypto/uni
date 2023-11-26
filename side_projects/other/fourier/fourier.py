@@ -46,49 +46,40 @@ def deviation(data1, data2):
     return max(sub)
 
 
-data = readComplex("original_data.txt")
+data = readComplex("./data/original_data.txt")
 fourier_transformed = transformed(data, True)
 
-writeComplex("transformed_default.txt",fourier_transformed)
-writeComplex("transformed_1.txt",fourier_transformed,1.0)
-writeComplex("transformed_01.txt",fourier_transformed,0.1)
-writeComplex("transformed_001.txt",fourier_transformed, 0.01)
-writeComplex("transformed_0001.txt",fourier_transformed, 0.001)
+writeComplex("./data/transformed_default.txt",fourier_transformed)
+writeComplex("./data/transformed_01.txt",fourier_transformed,0.1)
+writeComplex("./data/transformed_001.txt",fourier_transformed, 0.01)
+writeComplex("./data/transformed_0001.txt",fourier_transformed, 0.001)
 
 #default
-datanew = readComplex("transformed_default.txt")
+datanew = readComplex("./data/transformed_default.txt")
 fourier_transformed = transformed(datanew, False)
-writeComplex("transformedback_default.txt", fourier_transformed)
-
-#1.0
-datanew = readComplex("transformed_1.txt")
-fourier_transformed = transformed(datanew, False)
-writeComplex("transformedback_1.txt", fourier_transformed)
-
+writeComplex("./data/transformedback_default.txt", fourier_transformed)
 
 #0.1
-datanew = readComplex("transformed_01.txt")
+datanew = readComplex("./data/transformed_01.txt")
 fourier_transformed = transformed(datanew, False)
-writeComplex("transformedback_01.txt", fourier_transformed)
+writeComplex("./data/transformedback_01.txt", fourier_transformed)
 
 #0.01
-datanew = readComplex("transformed_001.txt")
+datanew = readComplex("./data/transformed_001.txt")
 fourier_transformed = transformed(datanew, False)
-writeComplex("transformedback_001.txt", fourier_transformed)
+writeComplex("./data/transformedback_001.txt", fourier_transformed)
 
 #0.001
-datanew = readComplex("transformed_0001.txt")
+datanew = readComplex("./data/transformed_0001.txt")
 fourier_transformed = transformed(datanew, False)
-writeComplex("transformedback_0001.txt", fourier_transformed)
+writeComplex("./data/transformedback_0001.txt", fourier_transformed)
 
-epsilondefault = readComplex("transformedback_default.txt")
-epsilon_0001 = readComplex("transformedback_0001.txt")
-epsilon_001 = readComplex("transformedback_001.txt")
-epsilon_01 = readComplex("transformedback_01.txt")
-epsilon_1 = readComplex("transformedback_1.txt")
+epsilondefault = readComplex("./data/transformedback_default.txt")
+epsilon_0001 = readComplex("./data/transformedback_0001.txt")
+epsilon_001 = readComplex("./data/transformedback_001.txt")
+epsilon_01 = readComplex("./data/transformedback_01.txt")
 
 print("Maximum deviation with default epsilon: ", deviation(data, epsilondefault))
 print("Maximum deviation with epsilon = 0.001: ", deviation(data, epsilon_0001))
 print("Maximum deviation with epsilon = 0.01: ", deviation(data, epsilon_001))
 print("Maximum deviation with epsilon = 0.1: ", deviation(data, epsilon_01))
-print("Maximum deviation with epsilon = 1: ", deviation(data, epsilon_1))
