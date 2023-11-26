@@ -1,10 +1,11 @@
 # Fourier Transformation
-
-A small project which implements *Fourier Transformation* in Python. <br>
+A small project which implements *Fourier Transformation* in Python. <br> <br>
+0 <br>
 <img src="./img/transformed_0_back.png"/>
-<br>
+<br> <br>
+20 <br>
 <img src="./img/transformed_20_back.png"/>
-<br>
-<img src="./img/transformed_60_back.png"/>
-<br>
-<img src="./img/transformed_80_back.png"/>
+<br> <br>
+60 <br>
+<img src="./img/transformed_60_back.png"/> <br> <br>
+**The numbers refer to the absolute value of the pixels that are stored in complex numbers.** 
