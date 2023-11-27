@@ -50,7 +50,7 @@
        * Temporary Workers
        * Bulk Prices
     
-   * #### _dbwt_ (Databases and Web Technology) - _E-Canteen Project has its own repo_
+   * #### _dbwt_ (Databases and Web Development) - _E-Canteen Project has its own repo_
        * Peer Review
        * Simple HTML Forms
        * Example for a quiz at the beginning of every lecture
