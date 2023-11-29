@@ -1,10 +1,10 @@
 ## **Year 1**
    * #### _ads_ (Algorithms and Data Structures)
-       * Doubly Linked List implementation and use case for a Twitter Console App
-       * Types of Graphs and basic Graph traversal Algorithms (Dijkstra, Prim, Kruskal, DFS, BFS) implementation
-       * Red Black Tree implementation
-       * Ring buffer and a Binary Search Tree implementation
-       * Implementation of Sorting and Hashing algorithms with a plot referring to runtime complexity
+       * [Doubly Linked List implementation and use case for a Twitter Console App](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/DLL-Twitter)
+       * [Types of Graphs and basic Graph traversal Algorithms (Dijkstra, Prim, Kruskal, DFS, BFS) implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Graphs_GraphAlgorithms)
+       * [Red Black Tree implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Red-Black-Tree)
+       * [Ring buffer and a Binary Search Tree implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/RingBuffer_BST)
+       * [Implementation of Sorting and Hashing algorithms with a plot referring to the runtime complexity](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/SortingAlgorithms_Hashing)
 
    * #### _dnis_ (Networking and IT-Security)
        * Project 3 is solely a TCP Reno package calculation
