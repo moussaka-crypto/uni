@@ -1,7 +1,8 @@
-## **Year 1**
+# Задачи по Информатика
+## **Year 1 (Първи курс)**
    * #### _ads_ (Algorithms and Data Structures)
        * [Doubly Linked List implementation and use case for a Twitter Console App](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/DLL-Twitter)
-       * [Types of Graphs and basic Graph traversal Algorithms (Dijkstra, Prim, Kruskal, DFS, BFS) implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Graphs_GraphAlgorithms)
+       * [Types of Graphs and implementation of basic Graph traversal Algorithms (Dijkstra, Prim, Kruskal, DFS, BFS)](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Graphs_GraphAlgorithms)
        * [Red Black Tree implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Red-Black-Tree)
        * [Ring buffer and a Binary Search Tree implementation](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/RingBuffer_BST)
        * [Implementation of Sorting and Hashing algorithms with a plot referring to the runtime complexity](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/SortingAlgorithms_Hashing)
@@ -35,7 +36,7 @@
        * Pushdown automaton (PDA) Interpreter
        * Exercises on Logic
 
-## **Year 2**
+## **Year 2 (Втори курс)**
    * #### _arbkvs_ (Operating Systems Architecture)
        * Lecture Code
        * Running LED in Assembly
@@ -89,7 +90,7 @@
        * My term paper on AI and Robotics
        * The Presentation itself
     
-  ## **Year 3**
+  ## **Year 3 (Трети курс)**
    * #### _ada_ (Applied Data Analytics)
    * #### _bda2_ (Big Data Analytics 2)
    * #### _devsecops_ (Development, Security and Operations)
