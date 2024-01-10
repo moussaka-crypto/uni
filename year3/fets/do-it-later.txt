@@ -1,1 +1,0 @@
-Add every script file and central setup repo at the end of semester. Mini-Project may be in a seperate repo.
