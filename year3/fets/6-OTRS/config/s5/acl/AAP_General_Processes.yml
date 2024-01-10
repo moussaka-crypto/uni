@@ -1,0 +1,20 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    PossibleAdd:
+      Process:
+      - Process-DIGIRfi
+  ConfigMatch:
+    Properties:
+      CustomerUser:
+        UserCustomerID:
+        - '[RegExp]^.'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated processes will be hidden.
+  ID: 7
+  Name: AAP General Processes
+  StopAfterMatch: 0
+  ValidID: 1

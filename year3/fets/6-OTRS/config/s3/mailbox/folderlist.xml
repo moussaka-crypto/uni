@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<folderlist>
+    <folder type="imap" name="agent@firma.de" collapsed="1" account_id="1">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="1" />
+    </folder>
+    <folder type="imap" name="support@firma.de" collapsed="1" account_id="3">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="1521462074" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="kunde@firma.de" collapsed="1" account_id="4">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl@firma.de" collapsed="1" account_id="8">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl@firma.de" collapsed="1" account_id="9">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl@firma.de" collapsed="1" account_id="10">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-incident-1stlvl@firma.de" collapsed="1" account_id="11">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-service-1stlvl@firma.de" collapsed="1" account_id="12">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-incident-2ndlvl@firma.de" collapsed="1" account_id="13">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-service-2ndlvl@firma.de" collapsed="1" account_id="15">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-incident-3rdlvl@firma.de" account_id="16">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+</folderlist>

@@ -1,0 +1,6 @@
+---
+DefaultValue: []
+PossibleNone: '0'
+PossibleValues: { 1: 'local', 2: 'remote'}
+TranslatableValues: '0'
+TreeView: '0'

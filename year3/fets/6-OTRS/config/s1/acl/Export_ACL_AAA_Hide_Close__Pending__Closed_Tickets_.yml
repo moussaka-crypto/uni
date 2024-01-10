@@ -1,0 +1,28 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-24 13:20:55
+  Comment: ''
+  ConfigChange:
+    PossibleNot:
+      Action:
+      - AgentTicketClose
+      - AgentTicketPending
+      - AgentTicketCustomer
+      - AgentTicketPriority
+      - AgentTicketMove
+      - AgentTicketFreeText
+  ConfigMatch:
+    Properties:
+      Ticket:
+        State:
+        - '[RegExp]closed'
+      User:
+        Group_rw:
+        - '[Not]admin'
+  CreateBy: admin
+  CreateTime: 2018-03-24 13:14:48
+  Description: ''
+  ID: '1'
+  Name: AAA Hide Close, Pending (Closed Tickets)
+  StopAfterMatch: 0
+  ValidID: '1'

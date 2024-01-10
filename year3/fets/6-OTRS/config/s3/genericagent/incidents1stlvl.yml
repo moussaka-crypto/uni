@@ -1,0 +1,9 @@
+---
+TypeIDs: '2'
+QueueIDs: '4'
+PriorityIDs: 
+        - '1'
+        - '2'
+        - '3'
+NewQueueID: '6'
+EventValues: 'TicketCreate'

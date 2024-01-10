@@ -1,0 +1,11 @@
+---
+DefaultValue: ''
+Link: ''
+LinkPreview: ''
+PossibleNone: '0'
+PossibleValues:  { 
+    1: 'approved',
+    2: 'declined'
+    }
+TranslatableValues: '0'
+TreeView: '0'

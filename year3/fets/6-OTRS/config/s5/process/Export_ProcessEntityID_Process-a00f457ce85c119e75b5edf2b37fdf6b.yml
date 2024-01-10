@@ -1,0 +1,274 @@
+---
+Activities:
+  Activity-169261b8d7fba5c1c76ac8a47d28532a:
+    ActivityDialogs:
+    - ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+    - ActivityDialog-1d379346f36166a17220f346d7c6f189
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+        '2': ActivityDialog-1d379346f36166a17220f346d7c6f189
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-169261b8d7fba5c1c76ac8a47d28532a
+    ID: '4'
+    Name: ':: Provide Solution (1st-Lvl)'
+  Activity-3fef22e0add552140d2b90d1a4389776:
+    ActivityDialogs:
+    - ActivityDialog-c42225a401e9bd99ea7309bf33b7d946
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-c42225a401e9bd99ea7309bf33b7d946
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-3fef22e0add552140d2b90d1a4389776
+    ID: '5'
+    Name: 'Medoptics :: Incident'
+  Activity-61b2b9d8c601c7e4f3cc6faa53a5233c:
+    ActivityDialogs:
+    - ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+    - ActivityDialog-1d379346f36166a17220f346d7c6f189
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+        '2': ActivityDialog-1d379346f36166a17220f346d7c6f189
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-61b2b9d8c601c7e4f3cc6faa53a5233c
+    ID: '6'
+    Name: ':: Provide Solution (2nd-Lvl)'
+  Activity-7f9becb231d6423ff413fde0850fe400:
+    ActivityDialogs: []
+    ChangeTime: 2018-06-27 22:57:02
+    Config: {}
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-7f9becb231d6423ff413fde0850fe400
+    ID: '2'
+    Name: Completed
+  Activity-b0b36e2a264e07526abb2aec5e5de254:
+    ActivityDialogs:
+    - ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-b0b36e2a264e07526abb2aec5e5de254
+    ID: '7'
+    Name: ':: Provide Solution (3rd-Lvl)'
+ActivityDialogs:
+  ActivityDialog-1d379346f36166a17220f346d7c6f189:
+    ChangeTime: 2018-06-27 22:57:07
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Escalate the ticket to the next level.
+      FieldOrder:
+      - DynamicField_Description
+      - DynamicField_Escalate
+      Fields:
+        DynamicField_Description:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_Escalate:
+          DefaultValue: '1'
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+      Interface:
+      - AgentInterface
+      Permission: rw
+      RequiredLock: '0'
+      SubmitAdviceText: ''
+      SubmitButtonText: level up
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: ActivityDialog-1d379346f36166a17220f346d7c6f189
+    ID: '3'
+    Name: ':: Escalate'
+  ActivityDialog-c42225a401e9bd99ea7309bf33b7d946:
+    ChangeTime: 2018-06-28 20:51:11
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please describe your problem.
+      FieldOrder:
+      - DynamicField_Market
+      - DynamicField_MEDproductid
+      - Article
+      - Priority
+      Fields:
+        Article:
+          Config:
+            CommunicationChannel: Internal
+            IsVisibleForCustomer: '0'
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_MEDproductid:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_Market:
+          DefaultValue: Medoptics
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+        Priority:
+          DefaultValue: 3 normal
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+      Interface:
+      - AgentInterface
+      - CustomerInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: ActivityDialog-c42225a401e9bd99ea7309bf33b7d946
+    ID: '4'
+    Name: 'Medoptics :: Incident'
+  ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f:
+    ChangeTime: 2018-06-27 22:57:07
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please describe your solution.
+      FieldOrder:
+      - State
+      - DynamicField_Description
+      - DynamicField_Solution
+      Fields:
+        DynamicField_Description:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_Solution:
+          DefaultValue: '1'
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+        State:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: completion status
+          Display: '2'
+      Interface:
+      - AgentInterface
+      Permission: ''
+      RequiredLock: '0'
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: ActivityDialog-fd2204c0d3197c1af116ae4873f08f6f
+    ID: '5'
+    Name: ':: Provide Solution'
+Process:
+  Activities:
+  - Activity-169261b8d7fba5c1c76ac8a47d28532a
+  - Activity-3fef22e0add552140d2b90d1a4389776
+  - Activity-61b2b9d8c601c7e4f3cc6faa53a5233c
+  - Activity-7f9becb231d6423ff413fde0850fe400
+  - Activity-b0b36e2a264e07526abb2aec5e5de254
+  ChangeTime: 2018-06-27 22:57:02
+  Config:
+    Description: Incident
+    Path:
+      Activity-169261b8d7fba5c1c76ac8a47d28532a:
+        Transition-b2f2c80df7ed1c01ba0e5185c846cb31:
+          ActivityEntityID: Activity-61b2b9d8c601c7e4f3cc6faa53a5233c
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+      Activity-3fef22e0add552140d2b90d1a4389776:
+        Transition-2b1089ad532ca8712045640ce30749ec:
+          ActivityEntityID: Activity-169261b8d7fba5c1c76ac8a47d28532a
+      Activity-61b2b9d8c601c7e4f3cc6faa53a5233c:
+        Transition-b2f2c80df7ed1c01ba0e5185c846cb31:
+          ActivityEntityID: Activity-b0b36e2a264e07526abb2aec5e5de254
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+      Activity-7f9becb231d6423ff413fde0850fe400: {}
+      Activity-b0b36e2a264e07526abb2aec5e5de254:
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+    StartActivity: Activity-3fef22e0add552140d2b90d1a4389776
+    StartActivityDialog: ActivityDialog-c42225a401e9bd99ea7309bf33b7d946
+  CreateTime: 2018-06-27 22:57:02
+  EntityID: Process-a00f457ce85c119e75b5edf2b37fdf6b
+  ID: '2'
+  Layout:
+    Activity-169261b8d7fba5c1c76ac8a47d28532a:
+      left: '612'
+      top: '90.9166717529297'
+    Activity-3fef22e0add552140d2b90d1a4389776:
+      left: '209'
+      top: '110.91667175293'
+    Activity-61b2b9d8c601c7e4f3cc6faa53a5233c:
+      left: '640'
+      top: '246.91667175293'
+    Activity-7f9becb231d6423ff413fde0850fe400:
+      left: '1095'
+      top: '181.91667175293'
+    Activity-b0b36e2a264e07526abb2aec5e5de254:
+      left: '798'
+      top: '419.91667175293'
+  Name: 'Medoptics :: Incident'
+  State: Active
+  StateEntityID: S1
+  TransitionActions: []
+  Transitions:
+  - Transition-b2f2c80df7ed1c01ba0e5185c846cb31
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+  - Transition-2b1089ad532ca8712045640ce30749ec
+  - Transition-b2f2c80df7ed1c01ba0e5185c846cb31
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+Transitions:
+  Transition-2b1089ad532ca8712045640ce30749ec:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_ProcessManagementProcessID:
+              Match: ^.
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-2b1089ad532ca8712045640ce30749ec
+    ID: '1'
+    Name: Always Move
+  Transition-b2f2c80df7ed1c01ba0e5185c846cb31:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_Escalate:
+              Match: '1'
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-b2f2c80df7ed1c01ba0e5185c846cb31
+    ID: '3'
+    Name: Escalation
+  Transition-efce41201952c0c0b5778d1ab13ea1f1:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_Solution:
+              Match: '1'
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-efce41201952c0c0b5778d1ab13ea1f1
+    ID: '2'
+    Name: Solution

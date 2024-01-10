@@ -1,0 +1,13 @@
+---
+DefaultValue: ''
+Link: ''
+LinkPreview: ''
+PossibleNone: '0'
+PossibleValues:  { 
+    1: 'Jolaroid M100',
+    2: 'Jolaroid M300',
+    3: 'Humilex L' ,
+    4: 'StandPro Travel' 
+    }
+TranslatableValues: '0'
+TreeView: '0'

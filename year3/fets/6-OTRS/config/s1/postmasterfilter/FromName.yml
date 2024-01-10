@@ -1,0 +1,10 @@
+---
+Match:
+- 
+  Key: 'From'
+  Value: '<(.+)>'
+Not:
+Set:
+-
+  Key: 'X-OTRS-DynamicField-FromName'
+  Value: '[***]'

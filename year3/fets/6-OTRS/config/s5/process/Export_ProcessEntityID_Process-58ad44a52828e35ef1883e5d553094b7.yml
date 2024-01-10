@@ -1,0 +1,233 @@
+---
+Activities:
+  Activity-0d702419cf4285ac041f314d672dec49:
+    ActivityDialogs:
+    - ActivityDialog-589e9b65f7f28e38a2b3a324dc7a8db8
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-589e9b65f7f28e38a2b3a324dc7a8db8
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: Activity-0d702419cf4285ac041f314d672dec49
+    ID: '11'
+    Name: 'IntelliEyes :: New Service'
+  Activity-66bf74a0c0015efe542f2bece71fe2a1:
+    ActivityDialogs:
+    - ActivityDialog-6ecba786773ac6fa6c5886f90e4e9930
+    ChangeTime: 2018-06-27 22:57:03
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-6ecba786773ac6fa6c5886f90e4e9930
+    CreateTime: 2018-06-27 22:57:03
+    EntityID: Activity-66bf74a0c0015efe542f2bece71fe2a1
+    ID: '9'
+    Name: 'IntelliEyes :: Service Activation'
+  Activity-7f9becb231d6423ff413fde0850fe400:
+    ActivityDialogs: []
+    ChangeTime: 2018-06-27 22:57:02
+    Config: {}
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-7f9becb231d6423ff413fde0850fe400
+    ID: '2'
+    Name: Completed
+ActivityDialogs:
+  ActivityDialog-589e9b65f7f28e38a2b3a324dc7a8db8:
+    ChangeTime: 2018-06-28 20:49:46
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please upload the service order as attachment
+      FieldOrder:
+      - DynamicField_Market
+      - DynamicField_INTELLIservice
+      - DynamicField_INTELLIfeatures
+      - DynamicField_INTELLIStartdate
+      - DynamicField_INTELLIDuration
+      - Article
+      Fields:
+        Article:
+          Config:
+            CommunicationChannel: Internal
+            IsVisibleForCustomer: '0'
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_INTELLIDuration:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_INTELLIStartdate:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_INTELLIfeatures:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_INTELLIservice:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_Market:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+      Interface:
+      - AgentInterface
+      - CustomerInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: Don't forget to upload the serivce order as attachment!
+      SubmitButtonText: Submit & Upload
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: ActivityDialog-589e9b65f7f28e38a2b3a324dc7a8db8
+    ID: '9'
+    Name: 'IntelliEyes :: New Service'
+  ActivityDialog-6ecba786773ac6fa6c5886f90e4e9930:
+    ChangeTime: 2018-06-27 23:26:01
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please activate the requested service for the customer.
+      FieldOrder:
+      - DynamicField_Solution
+      - DynamicField_INTELLIservice
+      - DynamicField_INTELLIfeatures
+      - DynamicField_INTELLIStartdate
+      - DynamicField_INTELLIDuration
+      Fields:
+        DynamicField_INTELLIDuration:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_INTELLIStartdate:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_INTELLIfeatures:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_INTELLIservice:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_Solution:
+          DefaultValue: approved
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+      Interface:
+      - AgentInterface
+      Permission: rw
+      RequiredLock: '1'
+      SubmitAdviceText: ''
+      SubmitButtonText: Activate Service
+    CreateTime: 2018-06-27 22:57:03
+    EntityID: ActivityDialog-6ecba786773ac6fa6c5886f90e4e9930
+    ID: '7'
+    Name: 'IntelliEyes :: Service Activation'
+Process:
+  Activities:
+  - Activity-0d702419cf4285ac041f314d672dec49
+  - Activity-66bf74a0c0015efe542f2bece71fe2a1
+  - Activity-7f9becb231d6423ff413fde0850fe400
+  ChangeTime: 2018-06-27 22:57:04
+  Config:
+    Description: Request a new service
+    Path:
+      Activity-0d702419cf4285ac041f314d672dec49:
+        Transition-2b1089ad532ca8712045640ce30749ec:
+          ActivityEntityID: Activity-66bf74a0c0015efe542f2bece71fe2a1
+          TransitionAction:
+          - TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+      Activity-66bf74a0c0015efe542f2bece71fe2a1:
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+          TransitionAction:
+          - TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+      Activity-7f9becb231d6423ff413fde0850fe400: {}
+    StartActivity: Activity-0d702419cf4285ac041f314d672dec49
+    StartActivityDialog: ActivityDialog-589e9b65f7f28e38a2b3a324dc7a8db8
+  CreateTime: 2018-06-27 22:57:04
+  EntityID: Process-58ad44a52828e35ef1883e5d553094b7
+  ID: '5'
+  Layout:
+    Activity-0d702419cf4285ac041f314d672dec49:
+      left: '229'
+      top: '67.6166687011719'
+    Activity-66bf74a0c0015efe542f2bece71fe2a1:
+      left: '605'
+      top: '93'
+    Activity-7f9becb231d6423ff413fde0850fe400:
+      left: '1037'
+      top: '133.600006103516'
+  Name: 'IntelliEyes :: New Service'
+  State: Active
+  StateEntityID: S1
+  TransitionActions:
+  - TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+  - TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+  Transitions:
+  - Transition-2b1089ad532ca8712045640ce30749ec
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+TransitionActions:
+  TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193:
+    ChangeTime: 2018-06-27 22:57:03
+    Config:
+      Config:
+        State: close successful
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketStateSet
+    CreateTime: 2018-06-27 22:57:03
+    EntityID: TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+    ID: '1'
+    Name: State::Close successful
+  TransitionAction-890c5a21acd1b24b05fe71114895e7e3:
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      Config:
+        Queue: <OTRS_TICKET_DynamicField_Market> 1st Lvl
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+    ID: '2'
+    Name: Queue::IntelliEyes::<Market>
+Transitions:
+  Transition-2b1089ad532ca8712045640ce30749ec:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_ProcessManagementProcessID:
+              Match: ^.
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-2b1089ad532ca8712045640ce30749ec
+    ID: '1'
+    Name: Always Move
+  Transition-efce41201952c0c0b5778d1ab13ea1f1:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_Solution:
+              Match: '1'
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-efce41201952c0c0b5778d1ab13ea1f1
+    ID: '2'
+    Name: Solution

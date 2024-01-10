@@ -1,0 +1,25 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    PossibleAdd:
+      Process:
+      - 'Process-017c5c15fd14835979e1fb206e840796'
+      - 'Process-58ad44a52828e35ef1883e5d553094b7'
+      - 'Process-2ac7d5962f79cbc36b1f3777d2d3b80d'
+      - 'Process-4fa625b40b7f7c7a52ed4f40b9b56dc8'
+      - 'Process-71ae297e4933ab772f5e1eafa421c0f5'
+  ConfigMatch:
+    Properties:
+      CustomerUser:
+        UserCustomerID:
+        - '130'
+        - '131'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated processes will be hidden.
+  ID: 7
+  Name: AAP Intelli Customer CHINA  Processes
+  StopAfterMatch: 0
+  ValidID: 1

@@ -1,0 +1,185 @@
+---
+Activities:
+  Activity-2e6f9234b3aac745239385d9b9c7dacb:
+    ActivityDialogs:
+    - ActivityDialog-f715c4ebaabc46ba58f320062f5d00b5
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-f715c4ebaabc46ba58f320062f5d00b5
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: Activity-2e6f9234b3aac745239385d9b9c7dacb
+    ID: '12'
+    Name: 'IntelliEyes :: Stop Service'
+  Activity-7f9becb231d6423ff413fde0850fe400:
+    ActivityDialogs: []
+    ChangeTime: 2018-06-27 22:57:02
+    Config: {}
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Activity-7f9becb231d6423ff413fde0850fe400
+    ID: '2'
+    Name: Completed
+  Activity-cb5872d1a24495c7be4e5df260a80c0b:
+    ActivityDialogs:
+    - ActivityDialog-419513a51a8176ca38e9f61f92c06cbc
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-419513a51a8176ca38e9f61f92c06cbc
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: Activity-cb5872d1a24495c7be4e5df260a80c0b
+    ID: '13'
+    Name: 'IntelliEyes :: Termination of a Service'
+ActivityDialogs:
+  ActivityDialog-419513a51a8176ca38e9f61f92c06cbc:
+    ChangeTime: 2018-06-28 20:50:52
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please fill in the fields.
+      FieldOrder:
+      - DynamicField_Market
+      - Article
+      Fields:
+        Article:
+          Config:
+            CommunicationChannel: Internal
+            IsVisibleForCustomer: '0'
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: Please describe the reason for cancellation
+          Display: '2'
+        DynamicField_Market:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+      Interface:
+      - AgentInterface
+      - CustomerInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: ActivityDialog-419513a51a8176ca38e9f61f92c06cbc
+    ID: '10'
+    Name: 'IntelliEyes :: Termination of a Service'
+  ActivityDialog-f715c4ebaabc46ba58f320062f5d00b5:
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Stop the service immediately or remark the cancellation
+      FieldOrder:
+      - DynamicField_Solution
+      Fields:
+        DynamicField_Solution:
+          DefaultValue: approved
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+      Interface:
+      - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: Close
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: ActivityDialog-f715c4ebaabc46ba58f320062f5d00b5
+    ID: '11'
+    Name: 'IntelliEyes :: Stop Service'
+Process:
+  Activities:
+  - Activity-2e6f9234b3aac745239385d9b9c7dacb
+  - Activity-7f9becb231d6423ff413fde0850fe400
+  - Activity-cb5872d1a24495c7be4e5df260a80c0b
+  ChangeTime: 2018-06-28 20:50:57
+  Config:
+    Description: Terminate a service.
+    Path:
+      Activity-2e6f9234b3aac745239385d9b9c7dacb:
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+          TransitionAction:
+          - TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+      Activity-7f9becb231d6423ff413fde0850fe400: {}
+      Activity-cb5872d1a24495c7be4e5df260a80c0b:
+        Transition-2b1089ad532ca8712045640ce30749ec:
+          ActivityEntityID: Activity-2e6f9234b3aac745239385d9b9c7dacb
+          TransitionAction:
+          - TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+    StartActivity: Activity-cb5872d1a24495c7be4e5df260a80c0b
+    StartActivityDialog: ActivityDialog-419513a51a8176ca38e9f61f92c06cbc
+  CreateTime: 2018-06-27 22:57:04
+  EntityID: Process-71ae297e4933ab772f5e1eafa421c0f5
+  ID: '6'
+  Layout:
+    Activity-2e6f9234b3aac745239385d9b9c7dacb:
+      left: '554'
+      top: '121'
+    Activity-7f9becb231d6423ff413fde0850fe400:
+      left: '1027'
+      top: '157'
+    Activity-cb5872d1a24495c7be4e5df260a80c0b:
+      left: '203'
+      top: '57'
+  Name: 'IntelliEyes :: Termination of a Service'
+  State: Active
+  StateEntityID: S1
+  TransitionActions:
+  - TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+  - TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+  Transitions:
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+  - Transition-2b1089ad532ca8712045640ce30749ec
+TransitionActions:
+  TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193:
+    ChangeTime: 2018-06-27 22:57:03
+    Config:
+      Config:
+        State: close successful
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketStateSet
+    CreateTime: 2018-06-27 22:57:03
+    EntityID: TransitionAction-6eae0ba8fd49ce0ef14f06e4c7ec1193
+    ID: '1'
+    Name: State::Close successful
+  TransitionAction-890c5a21acd1b24b05fe71114895e7e3:
+    ChangeTime: 2018-06-27 22:57:04
+    Config:
+      Config:
+        Queue: <OTRS_TICKET_DynamicField_Market> 1st Lvl
+      Module: Kernel::System::ProcessManagement::TransitionAction::TicketQueueSet
+    CreateTime: 2018-06-27 22:57:04
+    EntityID: TransitionAction-890c5a21acd1b24b05fe71114895e7e3
+    ID: '2'
+    Name: Queue::IntelliEyes::<Market>
+Transitions:
+  Transition-2b1089ad532ca8712045640ce30749ec:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_ProcessManagementProcessID:
+              Match: ^.
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-2b1089ad532ca8712045640ce30749ec
+    ID: '1'
+    Name: Always Move
+  Transition-efce41201952c0c0b5778d1ab13ea1f1:
+    ChangeTime: 2018-06-27 22:57:02
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_Solution:
+              Match: '1'
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-06-27 22:57:02
+    EntityID: Transition-efce41201952c0c0b5778d1ab13ea1f1
+    ID: '2'
+    Name: Solution

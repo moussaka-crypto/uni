@@ -1,0 +1,22 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    PossibleAdd:
+      Process:
+      - 'Process-3e624fc75145d4696569f0d54c07cb67'
+      - 'Process-f728bbb6b15ea140b77319ee7962c6db'
+      - 'Process-dd22d29815efb5c33315c7433049ebdc'
+  ConfigMatch:
+    Properties:
+      User:
+        Role:
+        - '[RegExp]Digicam'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated processes will be hidden.
+  ID: 7
+  Name: AAP Digicam Agent Processes
+  StopAfterMatch: 0
+  ValidID: 1

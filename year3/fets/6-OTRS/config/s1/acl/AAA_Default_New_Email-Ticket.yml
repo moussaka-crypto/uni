@@ -1,0 +1,24 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    Possible: {}
+    PossibleNot:
+      Ticket:
+        Queue:
+        - Postmaster
+        - Raw
+        - Junk
+  ConfigMatch:
+    Properties:
+      Frontend:
+        Action:
+        - AgentTicketEmail
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: ''
+  ID: 2
+  Name: AAA Default - New Email-Ticket
+  StopAfterMatch: 0
+  ValidID: 1

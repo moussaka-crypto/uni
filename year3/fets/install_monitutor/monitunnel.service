@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitutor tunnel client
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/bash /usr/local/bin/install_monitutor.sh --update
+ExecStart=/usr/local/bin/monitutor_client -a monitutor.itslab.fh-aachen.de -p 5988 -u USER_NAME -w USER_SECRET -n HOSTNAME
+
+[Install]
+WantedBy=default.target
+

@@ -1,0 +1,166 @@
+---
+Activities:
+  Activity-7f9becb231d6423ff413fde0850fe400:
+    ActivityDialogs: []
+    ChangeTime: 2018-03-26 19:09:43
+    Config: {}
+    CreateTime: 2018-03-26 19:09:43
+    EntityID: Activity-7f9becb231d6423ff413fde0850fe400
+    ID: '11'
+    Name: Completed
+  Activity-8c9b11645ad79539cffff2e03f570c76:
+    ActivityDialogs:
+    - ActivityDialog-f113ab75dffe9be6fabea2759199b04a
+    ChangeTime: 2018-04-09 00:22:35
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-f113ab75dffe9be6fabea2759199b04a
+    CreateTime: 2018-04-09 00:18:02
+    EntityID: Activity-8c9b11645ad79539cffff2e03f570c76
+    ID: '24'
+    Name: 'IntelliEyes :: Hardware Registration'
+  Activity-f534bb6ec422603a0ff0fcf23870f9b5:
+    ActivityDialogs:
+    - ActivityDialog-ade02e17e410dd2bc87ba7d1f545c739
+    ChangeTime: 2018-04-07 18:49:13
+    Config:
+      ActivityDialog:
+        '1': ActivityDialog-ade02e17e410dd2bc87ba7d1f545c739
+    CreateTime: 2018-03-26 09:59:03
+    EntityID: Activity-f534bb6ec422603a0ff0fcf23870f9b5
+    ID: '7'
+    Name: 'IntelliEyes :: New Hardware'
+ActivityDialogs:
+  ActivityDialog-ade02e17e410dd2bc87ba7d1f545c739:
+    ChangeTime: 2018-04-09 02:25:15
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Please fill in the fields.
+      FieldOrder:
+      - DynamicField_Market
+      - DynamicField_Quantity
+      Fields:
+        DynamicField_Market:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_Quantity:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+      Interface:
+      - AgentInterface
+      Permission: ''
+      RequiredLock: 0
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2018-03-26 09:59:13
+    EntityID: ActivityDialog-ade02e17e410dd2bc87ba7d1f545c739
+    ID: '7'
+    Name: 'IntelliEyes :: New Hardware'
+  ActivityDialog-f113ab75dffe9be6fabea2759199b04a:
+    ChangeTime: 2018-04-09 00:24:58
+    Config:
+      DescriptionLong: ''
+      DescriptionShort: Register the requested hardware and prepare shipping
+      FieldOrder:
+      - DynamicField_Solution
+      - DynamicField_Market
+      - DynamicField_HardwareItem
+      Fields:
+        DynamicField_HardwareItem:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '2'
+        DynamicField_Market:
+          DefaultValue: ''
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '1'
+        DynamicField_Solution:
+          DefaultValue: approved
+          DescriptionLong: ''
+          DescriptionShort: ''
+          Display: '0'
+      Interface:
+      - AgentInterface
+      Permission: rw
+      RequiredLock: '1'
+      SubmitAdviceText: ''
+      SubmitButtonText: ''
+    CreateTime: 2018-04-09 00:22:26
+    EntityID: ActivityDialog-f113ab75dffe9be6fabea2759199b04a
+    ID: '25'
+    Name: 'IntelliEyes :: Hardware Registration'
+Process:
+  Activities:
+  - Activity-7f9becb231d6423ff413fde0850fe400
+  - Activity-8c9b11645ad79539cffff2e03f570c76
+  - Activity-f534bb6ec422603a0ff0fcf23870f9b5
+  ChangeTime: 2018-04-09 02:24:06
+  Config:
+    Description: Request new Hardware
+    Path:
+      Activity-7f9becb231d6423ff413fde0850fe400: {}
+      Activity-8c9b11645ad79539cffff2e03f570c76:
+        Transition-efce41201952c0c0b5778d1ab13ea1f1:
+          ActivityEntityID: Activity-7f9becb231d6423ff413fde0850fe400
+      Activity-f534bb6ec422603a0ff0fcf23870f9b5:
+        Transition-2b1089ad532ca8712045640ce30749ec:
+          ActivityEntityID: Activity-8c9b11645ad79539cffff2e03f570c76
+    StartActivity: Activity-f534bb6ec422603a0ff0fcf23870f9b5
+    StartActivityDialog: ActivityDialog-ade02e17e410dd2bc87ba7d1f545c739
+  CreateTime: 2018-03-26 09:54:44
+  EntityID: Process-125186c2678301eac1ff2407b31aa053
+  ID: '5'
+  Layout:
+    Activity-7f9becb231d6423ff413fde0850fe400:
+      left: '878'
+      top: '170'
+    Activity-8c9b11645ad79539cffff2e03f570c76:
+      left: '548'
+      top: '122'
+    Activity-f534bb6ec422603a0ff0fcf23870f9b5:
+      left: '269'
+      top: '80.6166687011719'
+  Name: 'IntelliEyes :: New Hardware'
+  State: Active
+  StateEntityID: S1
+  TransitionActions: []
+  Transitions:
+  - Transition-efce41201952c0c0b5778d1ab13ea1f1
+  - Transition-2b1089ad532ca8712045640ce30749ec
+Transitions:
+  Transition-2b1089ad532ca8712045640ce30749ec:
+    ChangeTime: 2018-03-26 19:09:43
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_ProcessManagementProcessID:
+              Match: ^.
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-03-26 19:09:43
+    EntityID: Transition-2b1089ad532ca8712045640ce30749ec
+    ID: '1'
+    Name: Always Move
+  Transition-efce41201952c0c0b5778d1ab13ea1f1:
+    ChangeTime: 2018-03-26 19:09:43
+    Config:
+      Condition:
+        '1':
+          Fields:
+            DynamicField_Solution:
+              Match: '1'
+              Type: Regexp
+          Type: and
+      ConditionLinking: and
+    CreateTime: 2018-03-26 19:09:43
+    EntityID: Transition-efce41201952c0c0b5778d1ab13ea1f1
+    ID: '3'
+    Name: Solution

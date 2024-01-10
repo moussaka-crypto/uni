@@ -1,0 +1,24 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: Digicam All Markets
+  ConfigChange:
+    PossibleAdd:
+      Ticket:
+        DynamicField_Market:
+        - 'PRIVATE'
+        - 'BUSINESS'
+  ConfigMatch:
+    Properties:
+      User:
+        Role:
+        - 'Digicam::1st-Lvl'
+        - 'Digicam::2nd-Lvl'
+        - 'Digicam::3rd-Lvl'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated Markets will be hidden.
+  ID: 8
+  Name: AAM Agent Digicam
+  StopAfterMatch: 0
+  ValidID: 1

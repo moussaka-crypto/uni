@@ -1,0 +1,247 @@
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-y: scroll; 
+}
+body {
+  margin-bottom: 60px;
+  padding-top: 70px;
+  font-family: sans-serif;
+/*background-color: gold yellowgreen cornflowerblue;+*/
+}
+/*bodybackground*/
+.bb {
+    background: linear-gradient(
+    to right, 
+    #000000 0%, 
+    #FFFFFF 25%,
+    #FFFFFF 25%,
+    #FFFFFF 75%,
+    #FFFFFF 75%, 
+    #000000 100%
+  );
+    opacity: 0.4;
+    position: absolute;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bc {
+    background: linear-gradient(
+    to right, 
+    #00B1AC 0%, 
+    #00B1AC 25%,
+    #FFFFFF 25%,
+    #FFFFFF 75%,
+    #000000 75%, 
+    #000000 100%
+  );
+    position: absolute;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.navbar-fixed-bottom {
+    min-height: 20px;
+    max-height: 20px;
+}
+.navbar-brand-bottom {
+    line-height: 20px;
+    height: 20px;
+    padding-top: 0;
+}
+
+.navbar-brand-bottom a {
+    font-size: 10px !important;
+}
+
+.navbar-fixed-bottom .navbar-nav li a {
+    line-height: 20px;
+    height: 20px;
+    padding-top: 0;
+    font-size: 10px;
+}
+
+.navbar-fixed-top {
+    background-image: url("mayer.png");
+    background-repeat: no-repeat;
+    background-size: contain   ;
+    background-position: left top;
+    
+}
+
+.navbar-fixed-bottom {
+    background-image: url("mayer.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+
+    
+}
+
+.jumbotron {
+    position: relative;
+     font-family: sans-serif;
+    
+}
+
+.jumbotron::after {
+     content: "";
+/*   background-image: url("mayer.png");*/
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 20%;
+    background-position: center ;
+      opacity: 0.23;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+    }
+
+p { margin: 0;
+    padding: 0;}
+
+
+@include media-breakpoint-up(sm) {
+  .hide {
+    display: none;
+  }
+}
+
+.box {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    padding: 45px 15px 15px;
+    margin: 0 0px 15px;
+    width: 100%;
+    border-style: solid;
+}
+
+.box::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    content: "Contact form";
+    box-sizing: border-box;
+}
+.boxbottom {
+    margin-top: -16px;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 9px 14px;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+@media only screen and (max-width: 800px)  {
+  .navbar-fixed-top {
+    background-image: none;
+  }
+}
+
+
+.sent {
+display: none;
+}
+
+/*PRESS-START*/
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v6/e3t4euO8T-267oIAQAu6jDQyK3nYivN04w.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v6/e3t4euO8T-267oIAQAu6jDQyK3nRivN04w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v6/e3t4euO8T-267oIAQAu6jDQyK3nWivN04w.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v6/e3t4euO8T-267oIAQAu6jDQyK3nbivN04w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v6/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*BUNGEE+SHADE*/
+/* vietnamese */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url(https://fonts.gstatic.com/s/bungeeshade/v3/DtVkJxarWL0t2KdzK3oI_jkc5ijTnwE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url(https://fonts.gstatic.com/s/bungeeshade/v3/DtVkJxarWL0t2KdzK3oI_jkc5yjTnwE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url(https://fonts.gstatic.com/s/bungeeshade/v3/DtVkJxarWL0t2KdzK3oI_jkc6SjT.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+    

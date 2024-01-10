@@ -1,0 +1,14 @@
+---
+AgentLink: ''
+Constrictions: ''
+CustomerLink: ''
+DefaultValues: []
+DeploymentStates: []
+DisplayPattern: <CI_Name>
+ITSMConfigItemClasses:
+- '23'
+ItemSeparator: ', '
+MaxArraySize: '1'
+MaxQueryResult: '10'
+MinQueryLength: '3'
+QueryDelay: '300'

@@ -1,0 +1,23 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: IntelliEyes Market CHINA
+  ConfigChange:
+    PossibleAdd:
+      Ticket:
+        DynamicField_Market:
+        - '132'
+        - 'CHINA'
+  ConfigMatch:
+    Properties:
+      CustomerUser:
+        UserCustomerID:
+        - '130'
+        - '131'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated Markets will be hidden.
+  ID: 9
+  Name: AAM Agent IntelliEyes CHINA
+  StopAfterMatch: 0
+  ValidID: 1

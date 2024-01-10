@@ -1,0 +1,17 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    PossibleNot:
+      Ticket:
+        DynamicField_Market:
+        - '[RegExp]^.'
+  ConfigMatch: ''
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: ''
+  ID: 5
+  Name: AAA Hide all Markets
+  StopAfterMatch: 0
+  ValidID: 1

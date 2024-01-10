@@ -1,0 +1,109 @@
+#!/bin/bash
+export DEMOOTRS=`pwd`
+#echo "* * * * *  $DEMOOTRS/restart_mailclient $DEMOOTRS > $DEMOOTRS/cronlog 2>&1" > ./cronjob
+echo "* * * * * /bin/bash -c 'inotifywait -e delete_self $DEMOOTRS/volumes/mailbox/.sylpheed-2.0/folderlist.xml && sleep 1 && /usr/local/bin/docker-compose -f $DEMOOTRS/docker-compose.yml restart mailclient && if [ -e $DEMOOTRS/volumes/config/demo_otrs/stopcronjob ];then sudo crontab -r;fi' > $DEMOOTRS/cronlog 2>&1" > ./cronjob
+sudo apt install -y inotify-tools
+sudo crontab ./cronjob #&& rm ./cronjob
+STARTTIME=$SECONDS
+
+echo -n "-> web-setup" 
+#sudo docker exec demootrs_otrs  sed -i 's/index.pl//' /etc/httpd/conf/httpd.conf
+sudo docker cp ./web/. demootrs_otrs:/var/www/html/ && sudo docker cp ./web/fonts/. demootrs_otrs:/var/www/html/fonts
+sudo docker cp ./web/register.pl demootrs_otrs:/opt/otrs/bin/cgi-bin/
+sudo docker cp ./web/contact.pl demootrs_otrs:/opt/otrs/bin/cgi-bin/
+if ! sudo docker exec demootrs_otrs grep -q otrs.firma.de /etc/hosts; then 
+  sudo docker exec demootrs_otrs cp /etc/hosts /tmp/tmp.hosts
+  sudo docker exec demootrs_otrs sed -i '$ a 127.0.0.1 firma.de' /tmp/tmp.hosts 
+  sudo docker exec demootrs_otrs sed -i '$ a 127.0.0.1 mail.firma.de' /tmp/tmp.hosts
+  sudo docker exec demootrs_otrs cp -f /tmp/tmp.hosts /etc/hosts
+fi
+if ! grep -q otrs.firma.de /etc/hosts; then 
+  sudo sed -i '$ a 127.0.0.1    firma.de www.firma.de' /etc/hosts
+  sudo sed -i '$ a 127.0.0.1    mail.firma.de' /etc/hosts 
+  sudo sed -i '$ a 127.0.0.1    otrs.firma.de' /etc/hosts 
+  sudo sed -i '$ a 127.0.0.1    priv.at' /etc/hosts 
+fi
+sudo docker cp ./config/apache.conf demootrs_otrs:/etc/httpd/conf.d/firma.conf
+sudo docker exec demootrs_otrs sed -i 's/#ServerName.*/ServerName firma.de/' /etc/httpd/conf/httpd.conf
+#restart webserver inside container
+sudo docker exec demootrs_otrs  supervisorctl restart httpd
+echo " ...ok!"
+
+#install docker-ce
+sudo docker exec demootrs_otrs yum install -y yum-utils   device-mapper-persistent-data   lvm2 sudo
+sudo docker exec demootrs_otrs yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo docker exec demootrs_otrs yum install -y docker-ce
+#update firefox and add ffaddon
+sudo apt-get install -y firefox 
+(firefox ./ffaddon/firefox_multi_account_containers-6.0.0-an+fx-linux.xpi `pwd`/ffaddon/addon.html &> /dev/null &)
+wget https://addons.mozilla.org/firefox/downloads/file/3650825/firefox_multi_account_containers-7.1.0-fx.xpi
+(firefox firefox_multi_account_containers-7.1.0-fx.xpi &)
+#add apache user to sudo 
+if ! sudo docker exec demootrs_otrs grep -q apache /etc/sudoers; then 
+  sudo docker exec demootrs_otrs sed -i '$ a apache  ALL=(ALL)  NOPASSWD: ALL'  /etc/sudoers
+fi
+
+#check mysqld config at /etc/my.cnf in demootrs_mariadb
+if sudo docker exec demootrs_mariadb grep -q max_allowed_packet=20M /etc/my.cnf; then
+  sudo docker exec demootrs_mariadb mysql -u root --password="changeme" -e "SET GLOBAL max_allowed_packet=67108864;"
+  echo "Warning: MariaDB does not have the required settings for OTRS loaded!"
+  echo "set global variable 'max_allowed_packet'"
+  sudo docker exec demootrs_mariadb mysql -u otrs --password="changeme" -e "SHOW VARIABLES LIKE 'max_allowed_packet';"
+fi
+
+
+echo "-> otrs-setup" 
+#copy custom commands, config & scripts
+cp -rf ./config/commands/Custom ./volumes/config/System/Console/Command/ #/Kernel/System/Console
+mkdir ./volumes/config/demo_otrs/ 
+cp -rf ./config/s* ./volumes/config/demo_otrs/
+cp -rf ./config/FAQ* ./volumes/config/demo_otrs/
+cp -rf ./config/navbar.xml ./volumes/config/Config/Files/XML/DemoOTRS.xml
+find ./volumes/config/demo_otrs/. -type f -name '*.sh' | xargs sed -i "s/sudo docker exec demootrs_otrs\s\+su - otrs -c .//g"
+find ./volumes/config/demo_otrs/. -type f -name '*.sh' | xargs sed -i 's/'\''$//g'
+find ./volumes/config/demo_otrs/. -type f -name '*.sh' | xargs sed -i "s/sudo docker exec demootrs_otrs//g"
+if  (grep -q OTRSBusinessRequired ./volumes/config/Output/HTML/Templates/Standard/Header.tt); then
+  sudo docker exec demootrs_otrs sed -i '35,38d' /opt/otrs/Kernel/Output/HTML/Templates/Standard/Header.tt
+fi
+
+#install additional packages
+#FAQ
+#LATEST=$(curl -s4 ftp://ftp.otrs.org/pub/otrs/packages/ | grep -Eo 'FAQ-[0-9].[0-9].[0-9]+' | tr "[:blank:]" "\n" | sort -V | tail -n 1)
+#if [ ! -f ./volumes/backup/$LATEST.opm ]; then
+#  sudo docker exec -it demootrs_otrs curl -o /var/otrs/backups/$LATEST.opm ftp://ftp.otrs.org/pub/otrs/packages/$LATEST.opm
+#else 
+#echo "File $LATEST.opm already existing."
+#fi
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Package::Install /opt/otrs/Kernel/demo_otrs/FAQ-*'
+
+#update faq category & add sub categories
+sudo docker exec demootrs_otrs su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Custom::Admin::FAQ::UpdateCategory --name "Demo-OTRS" --ID "1" --parent "0" --comment "demo-otrs guide" --groups "1,2"'
+#add faq articles
+sudo docker exec demootrs_otrs su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Custom::Admin::FAQ::Import "/opt/otrs/Kernel/demo_otrs/start.csv"'
+
+## add admin
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::User::Add --user-name "admin" --first-name OTRS --last-name Admin --email-address "admin@localhost" --password "otrs"'
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "admin" --user-name "admin" --permission "rw"'
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "users" --user-name "admin" --permission "rw"'
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "stats" --user-name "admin" --permission "rw"'
+##faq groups not used anymore, only for otrs 5.x.x or older
+#sudo docker exec   demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "faq" --user-name "admin" --permission "rw"'
+#sudo docker exec   demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "faq_admin" --user-name "admin" --permission "rw"'
+#sudo docker exec   demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "faq_approval" --user-name "admin" --permission "rw"'
+
+#create webservice user
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::User::Add --user-name "webservice" --first-name webservice --last-name user --email-address "root@localhost" --password "otrs"'
+sudo docker exec demootrs_otrs  su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Admin::Group::UserLink --group-name "users" --user-name "webservice" --permission "rw"'
+#create webservices
+sudo docker exec demootrs_otrs su - otrs -c '/opt/otrs/bin/otrs.Console.pl Custom::Admin::Webservice::Add --file "GenericTicketConnectorREST.yml" --name "GenericTicketConnectorREST"'
+sudo docker exec demootrs_otrs su - otrs -c '/opt/otrs/bin/otrs.Console.pl Custom::Admin::Webservice::Add --file "GenericTicketConnectorSOAP.yml" --name "GenericTicketConnectorSAOP"'
+
+#delete  default ticket
+sudo docker exec demootrs_otrs su - otrs -c 'perl /opt/otrs/bin/otrs.Console.pl Maint::Ticket::Delete --ticket-id "1"'
+
+# install fetchmail program for alternative mail fetching
+#sudo docker exec demootrs_otrs yum install -y fetchmail
+
+#load s1
+#./config/s1.sh $(($SECONDS - $STARTTIME))
+bash ./config/s1.sh

@@ -1,0 +1,9 @@
+---
+QueueIDs: 
+    - '28'
+    - '27'
+    - '31'
+StateIDs: 
+    - '2'
+NewCMD: '/bin/bash /opt/otrs/Kernel/demo_otrs/s5.sh'
+

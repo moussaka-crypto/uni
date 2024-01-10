@@ -1,0 +1,48 @@
+Return-Path: <>
+X-Original-To: kun.de@priv.at
+Delivered-To: kun.de@priv.at
+Received: from otrs.firma.de (demootrs_otrs.demootrs_default [172.21.0.2])
+	(Authenticated sender: support@firma.de)
+	by mail.firma.de (Postfix) with ESMTPA id 53408141E79
+	for <kun.de@priv.at>; Sun, 11 Mar 2018 21:21:02 +0000 (UTC)
+MIME-Version: 1.0
+Subject: [Ticket#2018031110000011] RE: Was los, Hans
+Date: Sun, 11 Mar 2018 21:20:02 +0000
+Precedence: bulk
+X-Loop: yes
+Auto-Submitted: auto-generated
+Message-ID: <1520803202.382450.453221246@otrs.firma.de>
+To: kun.de@priv.at
+Organization: Mayer GmbH
+From: Mayer GmbH Support <support@firma.de>
+Content-Type: multipart/alternative; boundary="----------=_1520803202-1354-0"
+
+This is a multi-part message in MIME format...
+
+------------=_1520803202-1354-0
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+This is a demo text which is send to every inquiry.
+It could contain something like:
+
+Thanks for your email. A new ticket has been created.
+
+You wrote:
+> hallo
+
+
+Your email will be answered by a human ASAP
+
+Have fun with OTRS! :-)
+
+Your OTRS Team
+
+------------=_1520803202-1354-0
+Content-Type: text/html; charset="utf-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body style="font-family:Geneva,Helvetica,Arial,sans-serif; font-size: 12px;">This is a demo text which is send to every inquiry.<br />It could contain something like:<br /><br />Thanks for your email. A new ticket has been created.<br /><br />You wrote:<br /><div  type="cite" style="border:none;border-left:solid blue 1.5pt;padding:0cm 0cm 0cm 4.0pt">hallo</div><br /><br />Your email will be answered by a human ASAP<br /><br />Have fun with OTRS! :-)<br /><br />Your OTRS Team<br /></body></html>
+------------=_1520803202-1354-0--

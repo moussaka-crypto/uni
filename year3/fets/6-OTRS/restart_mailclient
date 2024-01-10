@@ -1,0 +1,2 @@
+#!/bin/bash
+if inotifywait -e delete_self $1/volumes/mailbox/.sylpheed-2.0/folderlist.xml; then sleep 1 && /usr/local/bin/docker-compose -f $1/docker-compose.yml restart mailclient; fi

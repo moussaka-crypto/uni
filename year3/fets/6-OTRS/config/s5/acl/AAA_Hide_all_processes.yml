@@ -1,0 +1,17 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    Possible: {}
+    PossibleNot:
+      Process:
+      - '[RegExp]^.'
+  ConfigMatch: ''
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: ''
+  ID: 6
+  Name: AAA Hide all Processes
+  StopAfterMatch: 0
+  ValidID: 1

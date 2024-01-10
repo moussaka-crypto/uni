@@ -1,0 +1,52 @@
+---
+- ChangeBy: '2'
+  ChangeTime: 2018-03-24 13:07:48
+  Comment: ''
+  CreateBy: '2'
+  CreateTime: 2018-03-23 21:18:44
+  Data:
+    AgentEnabledByDefault:
+    - Email
+    ArticleAttachmentInclude:
+    - '0'
+    Events:
+    - TicketCreate
+    LanguageID:
+    - en
+    QueueID:
+    - '5'
+    RecipientEmail:
+    - <OTRS_Ticket_DynamicField_email>
+    SendOnOutOfOffice:
+    - '1'
+    TransportEmailTemplate:
+    - Default
+    Transports:
+    - Email
+    VisibleForAgent:
+    - '0'
+  ID: '17'
+  Message:
+    en:
+      Body: 'Dear &lt;OTRS_TICKET_DynamicField_firstname&gt; &lt;OTRS_TICKET_DynamicField_lastname&gt;,<br
+        />
+
+        <br />
+
+        thank you very much for registering on firma.de.&nbsp;<br />
+
+        We have received your request. Your case number is &lt;OTRS_TICKET_TicketNumber&gt;.<br
+        />
+
+        We will send you a confirmation as soon as your new user account will be available
+        for login.<br />
+
+        <br />
+
+        Kind regards,<br />
+
+        Support - Mayer GmbH'
+      ContentType: text/html
+      Subject: 'Ticket Created: <OTRS_TICKET_Title>'
+  Name: Registration Ticket create
+  ValidID: '1'

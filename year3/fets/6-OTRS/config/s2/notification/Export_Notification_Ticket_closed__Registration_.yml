@@ -1,0 +1,53 @@
+---
+- ChangeBy: '2'
+  ChangeTime: 2018-05-21 22:23:20
+  Comment: registration closed notification to customer
+  CreateBy: '2'
+  CreateTime: 2018-05-21 22:18:06
+  Data:
+    AgentEnabledByDefault:
+    - Email
+    ArticleAttachmentInclude:
+    - '0'
+    Events:
+    - TicketStateUpdate
+    IsVisibleForCustomer:
+    - '1'
+    LanguageID:
+    - en
+    QueueID:
+    - '5'
+    Recipients:
+    - Customer
+    StateID:
+    - '2'
+    - '3'
+    TransportEmailTemplate:
+    - Default
+    Transports:
+    - Email
+    VisibleForAgent:
+    - '0'
+  ID: '21'
+  Message:
+    en:
+      Body: 'Dear &lt;OTRS_CUSTOMER_REALNAME&gt;,<br />
+
+        <br />
+
+        your request for a new account registration has been &lt;OTRS_TICKET_State&gt;.<br
+        />
+
+        You can now login on <a href="http://firma.de/login.html">http://firma.de/login.html</a>
+        or on the login page of our customer portal <a href="http://otrs.firma.de/otrs/customer.pl">http://otrs.firma.de/otrs/customer.pl</a>.<br
+        />
+
+        &nbsp;
+
+        <p>Kind regards,<br />
+
+        Mayer GmbH</p>'
+      ContentType: text/html
+      Subject: Ticket closed '<OTRS_TICKET_Title>'
+  Name: Ticket closed (Registration)
+  ValidID: '1'

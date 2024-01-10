@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./mayer.png" type="image/png">
+    <link rel="icon" href="./mayer.png" type="image/png">
+</head>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <a class="navbar-brand drop" href="/">Mayer GmbH</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sign In</a></li>
+        <li><a href="register.html"><span aria-hidden="true"></span> Sign Up</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand navbar-brand-bottom" style="font-size: 10px;" href="/">&copy; 2018 » Mayer GmbH</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="./about.html">Imprint | Disclaimer</a></li>
+            <!--<span class="sr-only">(current)</span>-->
+          </ul>
+        </div>
+      </div>
+  </div>      
+</nav>
+
+<body>
+<div class="container bb"></div>
+<div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron text-center">
+              <p style="font-size: 2.3em;">Mayer GmbH</p>
+                 
+            </div>
+        </div>
+</div>
+<div class="container">
+<div class="row-fluid">
+<div class="col-xs-4 col-xs-offset-4"
+            <div class="modal-body">
+                <div class="well">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="login.html">Login</a></li>
+                    <li><a href="register.html" >Create Account</a></li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade form-group active in" id="login">
+                      </br>
+                      <form action="http://localhost/otrs/customer.pl" method="post" enctype="application/x-www-form-urlencoded" name="login">
+                          <input type="hidden" name="Action" value="Login"/>
+                          <input type="hidden" name="RequestedURL" value=""/>
+                          <input type="hidden" name="Lang" value="en"/>
+                          <input type="hidden" name="TimeOffset" id="TimeOffset" value=""/>
+                          <!-- Username -->
+                          <div class="form-group">
+                          <label class="control-label"  for="User">Username</label>
+                          <input type="text" id="User" name="User" placeholder="" class="input-xlarge form-control" required>
+                          </div>
+                          <div class="form-group">
+                          <!-- Password-->
+                          <label class="control-label" for="Password">Password</label>
+                          <input type="password" id="Password" name="Password" placeholder="" class="input-xlarge form-control" required>
+                          </div>                         
+                          <!-- Button -->
+                          <button class="btn btn-success">Login</button>
+                      </form>                
+                    </div>
+                </div>
+              </div>
+</div><!-- End of col-12 -->
+</div><!-- End of row -->
+</div><!-- END OF CONTAINER -->
+</body>
+</html>

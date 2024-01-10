@@ -1,0 +1,17 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-13 21:49:24
+  Comment: ''
+  ConfigChange:
+    PossibleNot:
+      Ticket:
+        Type:
+        - Unclassified
+  ConfigMatch: ''
+  CreateBy: admin
+  CreateTime: 2018-03-13 21:47:23
+  Description: ''
+  ID: '1'
+  Name: AAA Hide Unclassified
+  StopAfterMatch: 0
+  ValidID: '1'

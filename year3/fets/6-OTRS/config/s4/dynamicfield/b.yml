@@ -1,0 +1,6 @@
+---
+DefaultValue: []
+PossibleNone: '0'
+PossibleValues: {1: 'service_a', 2: 'service_b', 3: 'service_c'}
+TranslatableValues: '0'
+TreeView: '0'

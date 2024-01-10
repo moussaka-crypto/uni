@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<folderlist>
+    <folder type="imap" name="agent@firma.de" collapsed="1" account_id="1">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="1523382128" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="1523382125" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="support@firma.de" collapsed="1" account_id="3">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="1521462074" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-dach@firma.de" collapsed="1" account_id="7">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-benelux@firma.de" collapsed="1" account_id="8">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-europe@firma.de" collapsed="1" account_id="9">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-nam@firma.de" collapsed="1" account_id="10">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-latam@firma.de" collapsed="1" account_id="11">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-america@firma.de" collapsed="1" account_id="20">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-worldwide@firma.de" collapsed="1" account_id="21">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-dach@firma.de" collapsed="1" account_id="22">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-benelux@firma.de" collapsed="1" account_id="23">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-nam@firma.de" collapsed="1" account_id="24">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-latam@firma.de" collapsed="1" account_id="25">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-europe@firma.de" collapsed="1" account_id="26">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-america@firma.de" collapsed="1" account_id="27">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="customer-worldwide@firma.de" collapsed="1" account_id="28">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-dach@firma.de" collapsed="1" account_id="29">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-dach@firma.de" collapsed="1" account_id="30">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-dach@firma.de" collapsed="1" account_id="31">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-benelux@firma.de" collapsed="1" account_id="32">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-benelux@firma.de" collapsed="1" account_id="33">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-benelux@firma.de" collapsed="1" account_id="34">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-nam@firma.de" collapsed="1" account_id="35">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-nam@firma.de" collapsed="1" account_id="36">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-nam@firma.de" collapsed="1" account_id="37">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-latam@firma.de" collapsed="1" account_id="38">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-latam@firma.de" collapsed="1" account_id="39">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-latam@firma.de" collapsed="1" account_id="40">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-europe@firma.de" collapsed="1" account_id="41">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-europe@firma.de" collapsed="1" account_id="42">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-europe@firma.de" collapsed="1" account_id="43">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-america@firma.de" collapsed="1" account_id="44">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-america@firma.de" collapsed="1" account_id="45">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-america@firma.de" collapsed="1" account_id="46">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-1stlvl-worldwide@firma.de" collapsed="1" account_id="47">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-2ndlvl-worldwide@firma.de" collapsed="1" account_id="48">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="agent-3rdlvl-worldwide@firma.de" collapsed="1" account_id="49">
+        <folderitem type="draft" name="Drafts" path="Drafts" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="Trash" path="Trash" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="Sent" path="Sent" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="normal" name="Junk" path="Junk" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="INBOX" path="INBOX" threaded="1" mtime="0" new="0" unread="0" total="0" />
+    </folder>
+</folderlist>

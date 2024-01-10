@@ -1,0 +1,22 @@
+---
+- ChangeBy: admin
+  ChangeTime: 2018-03-14 11:27:21
+  Comment: ''
+  ConfigChange:
+    PossibleAdd:
+      Process:
+      - 'Process-a00f457ce85c119e75b5edf2b37fdf6b'
+      - 'Process-0a713cc388c4410806049e4c87975add'
+      - 'Process-a7217d2c38a7737f65255d0e152e3e2b'
+  ConfigMatch:
+    Properties:
+      User:
+        Role:
+        - '[RegExp]Medoptics'
+  CreateBy: admin
+  CreateTime: 2018-03-14 11:27:21
+  Description: Unrelated processes will be hidden.
+  ID: 7
+  Name: AAP Medoptics Agent Processes
+  StopAfterMatch: 0
+  ValidID: 1

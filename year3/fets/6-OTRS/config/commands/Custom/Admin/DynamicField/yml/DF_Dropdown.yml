@@ -1,0 +1,8 @@
+---
+DefaultValue: ''
+Link: ''
+LinkPreview: ''
+PossibleNone: '0'
+PossibleValues:  { 1: 'eins', 2: 'zwei'}
+TranslatableValues: '0'
+TreeView: '0'

@@ -1,0 +1,7 @@
+---
+DefaultValue: '1'
+Link: ''
+LinkPreview: ''
+RegExList:
+- ErrorMessage: insert only numbers!
+  Value: \d+
