@@ -1,0 +1,1146 @@
+Script started on 2023-10-31 09:45:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nc 192.168.100.10 8080
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. Alle Rechte vorbehalten.
+
+e:\>date /t
+date /t
+31.10.2023 
+
+e:\>time /t
+time /t
+14:47
+
+e:\>psÃ– Loggedon
+psLoggedon
+
+e:\>^[[A    psLoo ggedon -accepteula
+psLoggedon -accepteula
+
+e:\>cd Sy	 ysinternals
+cd Sysinternals
+
+e:\Sysinternals>psLoggedon.exe -acceptu ei ula
+psLoggedon.exe -accepteula
+
+PsLoggedon v1.35 - See who's logged on
+Copyright (C) 2000-2016 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+Users logged on locally:
+     14.10.2019 14:45:59    	KARLSPC\Karl Klein
+     <unknown time>		KARLSPC\geheimerKarl
+
+Users logged on via resource shares:
+     31.10.2023 14:50:29    	SECRETCATSHARE\Gast
+
+e:\Sysinternals>pslist
+pslist
+
+PsList v1.4 - Process information lister
+Copyright (C) 2000-2016 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+Process information for KARLSPC:
+
+Name                Pid Pri Thd  Hnd   Priv        CPU Time    Elapsed Time 
+Idle                  0   0   2    0      0     2:25:24.515 35472:07:56.655
+System                4   8 103 1117    128     0:08:01.921 35472:07:56.655
+smss                300  11   2   54    368     0:00:00.109 35472:07:56.653
+csrss               392  13   9  272   1224     0:00:00.468 35472:07:55.561
+wininit             472  13   1   88    952     0:00:00.046 35472:07:55.454
+csrss               484  13   8  207   1208     0:00:00.250 35472:07:55.449
+winlogon            556  13   2  180   1708     0:00:00.093 35472:07:55.401
+services            604   9   4  241   2852     0:00:00.796 35472:07:55.371
+lsass               612   9   6  928   4416     0:00:00.953 35472:07:55.361
+svchost             688   8  18  807   8164     0:00:01.921 35472:07:55.294
+svchost             752   8  10  671   5424     0:00:03.437 35472:07:55.192
+dwm                 848  13  10  358  17752     0:00:00.890 35472:07:55.141
+svchost             948   8  56 2085  22944     0:00:10.687 35472:07:55.054
+svchost             976   8  24  575  15652     0:00:01.406 35472:07:55.037
+svchost            1016   8  19  625  47600     0:00:17.453 35472:07:55.031
+svchost              76   8  17  627  14236     0:00:00.609 35472:07:55.029
+svchost             340   8  28  604   7980     0:00:00.859 35472:07:55.007
+svchost            1076   8  19  546   6392     0:00:00.343 35472:07:54.951
+VBoxService        1128   8  11  187   2564     0:00:00.234 35472:07:54.909
+svchost            1272   8   5  218   2108     0:00:00.140 35472:07:54.832
+svchost            1348   8   7  174   1788     0:00:00.015 35472:07:54.765
+spoolsv            1464   8   9  382   5228     0:00:00.109 35472:07:54.723
+svchost            1736   8  13  381   6404     0:00:00.359 35472:07:54.258
+svchost            1788   8   7  263   6940     0:00:02.656 35472:07:54.242
+MsMpEng            1864   8  26 1286 234128     0:08:50.312 35472:07:54.189
+Memory Compression  1912   8  28    0    104     0:00:01.078 35472:07:54.166
+sihost             2368   8   7  363   4176     0:00:00.843 35472:07:36.850
+svchost            2416   8   8  310   4552     0:00:00.093 35472:07:36.846
+explorer           2764   8  27 1291  18928     0:00:01.578 35472:07:36.723
+RuntimeBroker      2756   8   7  350   7776     0:00:00.843 35472:07:36.713
+taskhostw          2852   8  14  328   4836     0:00:00.062 35472:07:36.690
+SearchIndexer      1876   8  16  630  17380     0:00:01.218 35472:07:36.337
+ShellExperienceHost  2824   8  27  990  25260     0:00:00.703 35472:07:36.262
+SearchUI           3224   8  22  840  39984     0:00:00.437 35472:07:36.112
+dllhost            4024   8   4  156   2888     0:00:00.046 35472:07:32.991
+csrss               876  13  10  362   1340     0:00:10.328 35472:07:30.038
+winlogon              8  13   2  236   2268     0:00:00.156 35472:07:30.021
+dwm                3912  13  11  461  34424     0:00:06.015 35472:07:29.949
+MSASCuiL           4256   8   4  221   5640     0:00:00.093 35472:07:25.571
+VBoxTray           4300   8   6  152   1748     0:00:00.031 35472:07:25.101
+OneDrive           4340   8  13  389   5216     0:00:00.265 35472:07:24.654
+sihost             4468   8   7  488   5416     0:00:02.500 35472:07:24.433
+svchost            4476   8   7  311   4520     0:00:00.078 35472:07:24.433
+taskhostw          4572   8  13  385   6464     0:00:00.375 35472:07:24.377
+RuntimeBroker      4684   8   9  522  13428     0:00:02.562 35472:07:24.313
+explorer           4716   8  66 1869  79972     0:00:40.906 35472:07:24.306
+ShellExperienceHost  1644   8  40 1149  32304     0:00:01.390 35472:07:23.775
+MSASCuiL           6056   8   4  232   5984     0:00:00.171 35472:07:12.980
+VBoxTray           6108   8  10  209   2216     0:00:00.156 35472:07:12.533
+OneDrive           5472   8  20  475  16636     0:00:00.546 35472:07:12.070
+dllhost            5804   8   2  149   1700     0:00:00.093 35472:06:56.539
+ApplicationFrameHost  5524   8   2  292   8916     0:00:00.515 35472:06:53.934
+TrueCrypt          4380   8   4  535   9848     0:00:00.781 35472:06:06.309
+svchost            3240   8   6  175   1808     0:00:00.078 35472:05:56.800
+SkypeHost          3572   8  11  246   4584     0:00:00.015 35472:05:51.852
+SystemSettings     7952   8  17  517  10380     0:00:00.171 35406:32:16.285
+SkypeHost          6900   8   9  240   4384     0:00:00.062 35116:35:59.431
+SearchUI           2328   8  38 1066  84712     0:00:03.578 35116:35:25.868
+NisSrv             6868   8   8  271   9564     0:00:00.265 35116:26:05.049
+cmd                7212   8   1   38   1712     0:00:00.015     0:26:11.815
+conhost            5920   8   3  107   5564     0:00:00.046     0:26:11.811
+cmd                5048   8   1   42   1748     0:00:00.015     0:20:34.908
+conhost            8032   8   4  170   6008     0:00:00.078     0:20:34.900
+ncat               7572   8   1   74    860     0:00:00.000     0:07:50.876
+cmd                 932   8   1   60   1952     0:00:00.000     0:07:25.356
+pslist             3204  13   4  196   2556     0:00:00.031     0:00:00.104
+
+e:\Sysinternals>netstat -n
+netstat -n
+
+Aktive Verbindungen
+
+  Proto  Lokale Adresse         Remoteadresse          Status
+  TCP    192.168.100.10:445     192.168.100.20:49678   HERGESTELLT
+  TCP    192.168.100.10:8080    192.168.100.1:44716    HERGESTELLT
+  TCP    192.168.100.10:49680   192.168.100.20:445     HERGESTELLT
+
+e:\Sysinternals>psfile
+psfile
+
+PsFile v1.03 - Lists files and directories opened remotely
+Copyright (C) 2001-2016 Mark Russinovich
+Sysinternals
+
+Error listing remotely open files on KARLSPC:
+
+e:\Sysinternals>^C
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nc 192.168.100.10 8080
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. Alle Rechte vorbehalten.
+
+E:\>cd Sysinternals
+cd Sysinternals
+
+E:\Sysinternals>psfile
+psfile
+
+PsFile v1.03 - Lists files and directories opened remotely
+Copyright (C) 2001-2016 Mark Russinovich
+Sysinternals
+
+Files opened remotely on KARLSPC:
+
+[173] C:\Users\KARL KLEIN\DOCUMENTS\DIVERSES
+    User:   Gast
+    Locks:  0
+    Access: Read 
+[330] C:\Users\KARL KLEIN\DOCUMENTS\DIVERSES
+    User:   Gast
+    Locks:  0
+    Access: Read 
+
+E:\Sysinternals>tasklist
+tasklist
+
+Abbildname                     PID Sitzungsname       Sitz.-Nr. Speichernutzung
+========================= ======== ================ =========== ===============
+System Idle Process              0 Services                   0             4 K
+System                           4 Services                   0            32 K
+smss.exe                       300 Services                   0           324 K
+csrss.exe                      392 Services                   0         1.248 K
+wininit.exe                    472 Services                   0           684 K
+csrss.exe                      484                            1           972 K
+winlogon.exe                   556                            1         1.076 K
+services.exe                   604 Services                   0         4.364 K
+lsass.exe                      612 Services                   0         7.480 K
+svchost.exe                    688 Services                   0        13.092 K
+svchost.exe                    752 Services                   0         7.528 K
+dwm.exe                        848                            1        15.764 K
+svchost.exe                    948 Services                   0        39.264 K
+svchost.exe                    976 Services                   0        15.696 K
+svchost.exe                   1016 Services                   0        46.068 K
+svchost.exe                     76 Services                   0        14.520 K
+svchost.exe                    340 Services                   0        11.628 K
+svchost.exe                   1076 Services                   0         7.228 K
+VBoxService.exe               1128 Services                   0         3.568 K
+svchost.exe                   1272 Services                   0         5.388 K
+svchost.exe                   1348 Services                   0         2.264 K
+spoolsv.exe                   1464 Services                   0         4.300 K
+svchost.exe                   1736 Services                   0        11.196 K
+svchost.exe                   1788 Services                   0        12.500 K
+MsMpEng.exe                   1864 Services                   0       194.620 K
+Memory Compression            1912 Services                   0        21.172 K
+sihost.exe                    2368                            1         5.240 K
+svchost.exe                   2416                            1         6.152 K
+explorer.exe                  2764                            1        25.556 K
+RuntimeBroker.exe             2756                            1         6.132 K
+taskhostw.exe                 2852                            1         3.544 K
+SearchIndexer.exe             1876 Services                   0        13.948 K
+ShellExperienceHost.exe       2824                            1        21.348 K
+SearchUI.exe                  3224                            1        31.736 K
+dllhost.exe                   4024                            1         1.860 K
+csrss.exe                      876 Console                    2         1.876 K
+winlogon.exe                     8 Console                    2         2.608 K
+dwm.exe                       3912 Console                    2        43.092 K
+MSASCuiL.exe                  4256                            1         6.680 K
+VBoxTray.exe                  4300                            1         2.064 K
+OneDrive.exe                  4340                            1         6.880 K
+sihost.exe                    4468 Console                    2        12.044 K
+svchost.exe                   4476 Console                    2         6.592 K
+taskhostw.exe                 4572 Console                    2         7.348 K
+RuntimeBroker.exe             4684 Console                    2        31.480 K
+explorer.exe                  4716 Console                    2        75.080 K
+ShellExperienceHost.exe       1644 Console                    2        50.104 K
+MSASCuiL.exe                  6056 Console                    2         6.828 K
+VBoxTray.exe                  6108 Console                    2         2.820 K
+OneDrive.exe                  5472 Console                    2        12.792 K
+dllhost.exe                   5804 Console                    2         5.068 K
+ApplicationFrameHost.exe      5524 Console                    2         8.868 K
+TrueCrypt.exe                 4380 Console                    2         6.268 K
+svchost.exe                   3240 Services                   0         2.720 K
+SkypeHost.exe                 3572 Console                    2           720 K
+SystemSettings.exe            7952 Console                    2           320 K
+SkypeHost.exe                 6900                            1         1.652 K
+SearchUI.exe                  2328 Console                    2       114.984 K
+NisSrv.exe                    6868 Services                   0         1.852 K
+cmd.exe                       7212 Console                    2         1.192 K
+conhost.exe                   5920 Console                    2         8.016 K
+cmd.exe                       6720 Console                    2         2.944 K
+conhost.exe                   3680 Console                    2        15.932 K
+ncat.exe                      6508 Console                    2         4.356 K
+cmd.exe                       6920 Console                    2         3.628 K
+svchost.exe                   5484 Services                   0         6.152 K
+TrustedInstaller.exe          2924 Services                   0         6.308 K
+TiWorker.exe                  6044 Services                   0        10.000 K
+tasklist.exe                  1904 Console                    2         7.560 K
+WmiPrvSE.exe                  4384 Services                   0         8.216 K
+
+E:\Sysinternals>systeminfo
+systeminfo
+
+Hostname:                                      KARLSPC
+Betriebssystemname:                            Microsoft Windows 10 Enterprise
+Betriebssystemversion:                         10.0.14393 Nicht zutreffend Build 14393
+Betriebssystemhersteller:                      Microsoft Corporation
+Betriebssystemkonfiguration:                   Eigenst„ndige Arbeitsstation
+Betriebssystem-Buildtyp:                       Multiprocessor Free
+Registrierter Benutzer:                        Windows-Benutzer
+Registrierte Organisation:                     
+Produkt-ID:                                    00329-00000-00003-AA690
+Ursprngliches Installationsdatum:             31.07.2019, 08:20:38
+Systemstartzeit:                               31.10.2023, 13:28:33
+Systemhersteller:                              innotek GmbH
+Systemmodell:                                  VirtualBox
+Systemtyp:                                     x64-based PC
+Prozessor(en):                                 1 Prozessor(en) installiert.
+                                               [01]: Intel64 Family 6 Model 158 Stepping 10 GenuineIntel ~2904 MHz
+BIOS-Version:                                  innotek GmbH VirtualBox, 01.12.2006
+Windows-Verzeichnis:                           C:\Windows
+System-Verzeichnis:                            C:\Windows\system32
+Startger„t:                                    \Device\HarddiskVolume1
+Systemgebietsschema:                           de;Deutsch (Deutschland)
+Eingabegebietsschema:                          de;Deutsch (Deutschland)
+Zeitzone:                                      (UTC+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien
+Gesamter physischer Speicher:                  4.096 MB
+Verfgbarer physischer Speicher:               2.861 MB
+Virtueller Arbeitsspeicher: Maximale Gr”áe:    5.504 MB
+Virtueller Arbeitsspeicher: Verfgbar:         4.039 MB
+Virtueller Arbeitsspeicher: Zurzeit verwendet: 1.465 MB
+Auslagerungsdateipfad(e):                      C:\pagefile.sys
+Dom„ne:                                        WORKGROUP
+Anmeldeserver:                                 \\KARLSPC
+Hotfix(es):                                    2 Hotfix(e) installiert.
+                                               [01]: KB4103729
+                                               [02]: KB4485447
+Netzwerkkarte(n):                              1 Netzwerkadapter installiert.
+                                               [01]: Intel(R) PRO/1000 MT Desktop Adapter
+                                                     Verbindungsname: Ethernet
+                                                     DHCP aktiviert:  Nein
+                                                     IP-Adresse(n)
+                                                     [01]: 192.168.100.10
+                                                     [02]: fe80::6c6f:25f5:5a78:396
+Anforderungen fr Hyper-V:                     Es wurde ein Hypervisor erkannt. Features, die fr Hyper-V erforderlich sind, werden nicht angezeigt.
+
+E:\Sysinternals>netstat
+netstat
+
+Aktive Verbindungen
+
+  Proto  Lokale Adresse         Remoteadresse          Status
+  TCP    192.168.100.10:445     SECRETCATSHARE:49678   HERGESTELLT
+  TCP    192.168.100.10:8080    192.168.100.1:44718    HERGESTELLT
+
+E:\Sysinternals>whoami
+whoami
+karlspc\karl klein
+
+E:\Sysinternals>sc query
+sc query
+
+SERVICE_NAME: Appinfo
+DISPLAY_NAME: Anwendungsinformationen
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: AudioEndpointBuilder
+DISPLAY_NAME: Windows-Audio-Endpunkterstellung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Audiosrv
+DISPLAY_NAME: Windows-Audio
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BFE
+DISPLAY_NAME: Basisfiltermodul
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BITS
+DISPLAY_NAME: Intelligenter Hintergrundbertragungsdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: BrokerInfrastructure
+DISPLAY_NAME: Infrastrukturdienst fr Hintergrundaufgaben
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Browser
+DISPLAY_NAME: Computerbrowser
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CDPSvc
+DISPLAY_NAME: Plattformdienst fr verbundene Ger„te
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ClipSVC
+DISPLAY_NAME: Clientlizenzdienst (ClipSVC)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CoreMessagingRegistrar
+DISPLAY_NAME: CoreMessaging
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CryptSvc
+DISPLAY_NAME: Kryptografiedienste
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DcomLaunch
+DISPLAY_NAME: DCOM-Server-Prozessstart
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dhcp
+DISPLAY_NAME: DHCP-Client
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DiagTrack
+DISPLAY_NAME: Benutzererfahrung und Telemetrie im verbundenen Modus
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Dnscache
+DISPLAY_NAME: DNS-Client
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DoSvc
+DISPLAY_NAME: šbermittlungsoptimierung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DPS
+DISPLAY_NAME: Diagnoserichtliniendienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DsmSvc
+DISPLAY_NAME: Ger„teinstallations-Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: DsSvc
+DISPLAY_NAME: Datenfreigabedienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EventLog
+DISPLAY_NAME: Windows-Ereignisprotokoll
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: EventSystem
+DISPLAY_NAME: COM+-Ereignissystem
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: FontCache
+DISPLAY_NAME: Windows-Dienst fr Schriftartencache
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: iphlpsvc
+DISPLAY_NAME: IP-Hilfsdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: KeyIso
+DISPLAY_NAME: CNG-Schlsselisolation
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LanmanServer
+DISPLAY_NAME: Server
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LanmanWorkstation
+DISPLAY_NAME: Arbeitsstationsdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lfsvc
+DISPLAY_NAME: Geolocation-Dienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LicenseManager
+DISPLAY_NAME: Windows-Lizenz-Manager-Dienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: lmhosts
+DISPLAY_NAME: TCP/IP-NetBIOS-Hilfsdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: LSM
+DISPLAY_NAME: Lokaler Sitzungs-Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: MpsSvc
+DISPLAY_NAME: Windows-Firewall
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NcbService
+DISPLAY_NAME: Netzwerkverbindungsbroker
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: netprofm
+DISPLAY_NAME: Netzwerklistendienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: NlaSvc
+DISPLAY_NAME: NLA (Network Location Awareness)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: nsi
+DISPLAY_NAME: Netzwerkspeicher-Schnittstellendienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PcaSvc
+DISPLAY_NAME: Programmkompatibilit„ts-Assistent-Dienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: PlugPlay
+DISPLAY_NAME: Plug & Play
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Power
+DISPLAY_NAME: Stromversorgung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ProfSvc
+DISPLAY_NAME: Benutzerprofildienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcEptMapper
+DISPLAY_NAME: RPC-Endpunktzuordnung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: RpcSs
+DISPLAY_NAME: Remoteprozeduraufruf (RPC)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SamSs
+DISPLAY_NAME: Sicherheitskonto-Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Schedule
+DISPLAY_NAME: Aufgabenplanung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SENS
+DISPLAY_NAME: Benachrichtigungsdienst fr Systemereignisse
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: ShellHWDetection
+DISPLAY_NAME: Shellhardwareerkennung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Spooler
+DISPLAY_NAME: Druckwarteschlange
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SSDPSRV
+DISPLAY_NAME: SSDP-Suche
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: StateRepository
+DISPLAY_NAME: StateRepository-Dienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: StorSvc
+DISPLAY_NAME: Speicherdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SysMain
+DISPLAY_NAME: Superfetch
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: SystemEventsBroker
+DISPLAY_NAME: Systemereignissebroker
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Themes
+DISPLAY_NAME: Designs
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: tiledatamodelsvc
+DISPLAY_NAME: Kacheldaten-Modellserver
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TimeBrokerSvc
+DISPLAY_NAME: Zeitbroker
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TrkWks
+DISPLAY_NAME: šberwachung verteilter Verknpfungen (Client)
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: TrustedInstaller
+DISPLAY_NAME: Windows Modules Installer
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_PRESHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: UserManager
+DISPLAY_NAME: Benutzer-Manager
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VaultSvc
+DISPLAY_NAME: Anmeldeinformationsverwaltung
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: VBoxService
+DISPLAY_NAME: VirtualBox Guest Additions Service
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Wcmsvc
+DISPLAY_NAME: Windows-Verbindungs-Manager
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdiServiceHost
+DISPLAY_NAME: Diagnosediensthost
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdiSystemHost
+DISPLAY_NAME: Diagnosesystemhost
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WdNisSvc
+DISPLAY_NAME: Windows Defender-Netzwerkinspektionsdienst
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WinDefend
+DISPLAY_NAME: Windows Defender-Dienst
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WinHttpAutoProxySvc
+DISPLAY_NAME: WinHTTP-Web Proxy Auto-Discovery-Dienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: Winmgmt
+DISPLAY_NAME: Windows-Verwaltungsinstrumentation
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wlidsvc
+DISPLAY_NAME: Anmelde-Assistent fr Microsoft-Konten
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WpnService
+DISPLAY_NAME: Windows-Pushbenachrichtigungssystemdienst
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wscsvc
+DISPLAY_NAME: Sicherheitscenter
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: WSearch
+DISPLAY_NAME: Windows Search
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wuauserv
+DISPLAY_NAME: Windows Update
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, ACCEPTS_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: wudfsvc
+DISPLAY_NAME: Windows Driver Foundation - Benutzermodus-Treiberframework
+        TYPE               : 20  WIN32_SHARE_PROCESS  
+        STATE              : 4  RUNNING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CDPUserSvc_2e1a0
+DISPLAY_NAME: CDPUserSvc_2e1a0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: OneSyncSvc_2e1a0
+DISPLAY_NAME: Synchronisierungshost_2e1a0
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: CDPUserSvc_4ed3e
+DISPLAY_NAME: CDPUserSvc_4ed3e
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+SERVICE_NAME: OneSyncSvc_4ed3e
+DISPLAY_NAME: Synchronisierungshost_4ed3e
+        TYPE               : e0  USER_SHARE_PROCESS INSTANCE  
+        STATE              : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+
+E:\Sysinternals>tasklist /v
+tasklist /v
+
+Abbildname                     PID Sitzungsname       Sitz.-Nr. Speichernutzung Status          Benutzername                                           CPU-Zeit Fenstertitel                                                            
+========================= ======== ================ =========== =============== =============== ================================================== ============ ========================================================================
+System Idle Process              0 Services                   0             4 K Unknown         NT-AUTORITŽT\SYSTEM                                     2:52:59 Nicht zutreffend                                                        
+System                           4 Services                   0            32 K Unknown         Nicht zutreffend                                        0:12:08 Nicht zutreffend                                                        
+smss.exe                       300 Services                   0           324 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+csrss.exe                      392 Services                   0         1.500 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+wininit.exe                    472 Services                   0           684 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+csrss.exe                      484                            1           972 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+winlogon.exe                   556                            1         1.076 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+services.exe                   604 Services                   0         4.372 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+lsass.exe                      612 Services                   0         7.504 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+svchost.exe                    688 Services                   0        13.132 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:02 Nicht zutreffend                                                        
+svchost.exe                    752 Services                   0         7.528 K Unknown         NT-AUTORITŽT\Netzwerkdienst                             0:00:03 Nicht zutreffend                                                        
+dwm.exe                        848                            1        15.764 K Unknown         Window Manager\DWM-1                                    0:00:00 Nicht zutreffend                                                        
+svchost.exe                    948 Services                   0        40.048 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:11 Nicht zutreffend                                                        
+svchost.exe                    976 Services                   0        15.748 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:01 Nicht zutreffend                                                        
+svchost.exe                   1016 Services                   0        46.400 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:18 Nicht zutreffend                                                        
+svchost.exe                     76 Services                   0        14.668 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+svchost.exe                    340 Services                   0        11.604 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+svchost.exe                   1076 Services                   0         7.396 K Unknown         NT-AUTORITŽT\Netzwerkdienst                             0:00:00 Nicht zutreffend                                                        
+VBoxService.exe               1128 Services                   0         3.596 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+svchost.exe                   1272 Services                   0         5.388 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+svchost.exe                   1348 Services                   0         2.336 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+spoolsv.exe                   1464 Services                   0         4.300 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+svchost.exe                   1736 Services                   0        11.052 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+svchost.exe                   1788 Services                   0        12.500 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:02 Nicht zutreffend                                                        
+MsMpEng.exe                   1864 Services                   0       194.420 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:09:46 Nicht zutreffend                                                        
+Memory Compression            1912 Services                   0        21.012 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:01 Nicht zutreffend                                                        
+sihost.exe                    2368                            1         5.240 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+svchost.exe                   2416                            1         6.152 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+explorer.exe                  2764                            1        25.544 K Unknown         KARLSPC\geheimerKarl                                    0:00:01 Nicht zutreffend                                                        
+RuntimeBroker.exe             2756                            1         6.132 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+taskhostw.exe                 2852                            1         3.544 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+SearchIndexer.exe             1876 Services                   0        13.952 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:01 Nicht zutreffend                                                        
+ShellExperienceHost.exe       2824                            1        21.348 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+SearchUI.exe                  3224                            1        31.736 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+dllhost.exe                   4024                            1         1.860 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+csrss.exe                      876 Console                    2         1.892 K Running         NT-AUTORITŽT\SYSTEM                                     0:00:11 Nicht zutreffend                                                        
+winlogon.exe                     8 Console                    2         2.608 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+dwm.exe                       3912 Console                    2        43.088 K Running         Window Manager\DWM-2                                    0:00:06 DWM Notification Window                                                 
+MSASCuiL.exe                  4256                            1         6.680 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+VBoxTray.exe                  4300                            1         2.064 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+OneDrive.exe                  4340                            1         6.880 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+sihost.exe                    4468 Console                    2        12.044 K Running         KARLSPC\Karl Klein                                      0:00:02 Nicht zutreffend                                                        
+svchost.exe                   4476 Console                    2         6.592 K Unknown         KARLSPC\Karl Klein                                      0:00:00 Nicht zutreffend                                                        
+taskhostw.exe                 4572 Console                    2         7.348 K Running         KARLSPC\Karl Klein                                      0:00:00 Task Host Window                                                        
+RuntimeBroker.exe             4684 Console                    2        31.300 K Running         KARLSPC\Karl Klein                                      0:00:02 Nicht zutreffend                                                        
+explorer.exe                  4716 Console                    2        73.012 K Running         KARLSPC\Karl Klein                                      0:00:41 Nicht zutreffend                                                        
+ShellExperienceHost.exe       1644 Console                    2        50.104 K Running         KARLSPC\Karl Klein                                      0:00:01 Neue Benachrichtigung                                                   
+MSASCuiL.exe                  6056 Console                    2         6.828 K Running         KARLSPC\Karl Klein                                      0:00:00 Windows Defender                                                        
+VBoxTray.exe                  6108 Console                    2         2.820 K Running         KARLSPC\Karl Klein                                      0:00:00 VBoxSharedClipboardClass                                                
+OneDrive.exe                  5472 Console                    2        12.792 K Running         KARLSPC\Karl Klein                                      0:00:00 DDE Server Window                                                       
+dllhost.exe                   5804 Console                    2         5.068 K Running         KARLSPC\Karl Klein                                      0:00:00 OleMainThreadWndName                                                    
+ApplicationFrameHost.exe      5524 Console                    2         8.868 K Running         KARLSPC\Karl Klein                                      0:00:00 Einstellungen                                                           
+TrueCrypt.exe                 4380 Console                    2         6.268 K Running         KARLSPC\Karl Klein                                      0:00:00 TrueCrypt                                                               
+svchost.exe                   3240 Services                   0         2.720 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+SkypeHost.exe                 3572 Console                    2           720 K Unknown         KARLSPC\Karl Klein                                      0:00:00 Nicht zutreffend                                                        
+SystemSettings.exe            7952 Console                    2           320 K Running         KARLSPC\Karl Klein                                      0:00:00 Einstellungen                                                           
+SkypeHost.exe                 6900                            1         1.652 K Unknown         KARLSPC\geheimerKarl                                    0:00:00 Nicht zutreffend                                                        
+SearchUI.exe                  2328 Console                    2       114.984 K Running         KARLSPC\Karl Klein                                      0:00:03 Cortana                                                                 
+NisSrv.exe                    6868 Services                   0         2.640 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+cmd.exe                       7212 Console                    2         1.192 K Running         KARLSPC\Karl Klein                                      0:00:00 C:\Windows\system32\cmd.exe                                             
+conhost.exe                   5920 Console                    2         8.016 K Running         KARLSPC\Karl Klein                                      0:00:00 CicMarshalWnd                                                           
+cmd.exe                       6720 Console                    2         2.944 K Running         KARLSPC\Karl Klein                                      0:00:00 Administrator: Eingabeaufforderung - ncat.exe  -l -p 8080 -e cmd.exe - t
+conhost.exe                   3680 Console                    2        15.936 K Running         KARLSPC\Karl Klein                                      0:00:00 CicMarshalWnd                                                           
+ncat.exe                      6508 Console                    2         4.356 K Unknown         KARLSPC\Karl Klein                                      0:00:00 Nicht zutreffend                                                        
+cmd.exe                       6920 Console                    2         3.640 K Unknown         KARLSPC\Karl Klein                                      0:00:00 Nicht zutreffend                                                        
+svchost.exe                   5484 Services                   0         6.156 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+TrustedInstaller.exe          2924 Services                   0         6.332 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+TiWorker.exe                  6044 Services                   0        10.356 K Unknown         NT-AUTORITŽT\SYSTEM                                     0:00:00 Nicht zutreffend                                                        
+WmiPrvSE.exe                  4384 Services                   0        14.484 K Unknown         NT-AUTORITŽT\Netzwerkdienst                             0:00:00 Nicht zutreffend                                                        
+WmiPrvSE.exe                  3244 Services                   0         7.884 K Unknown         NT-AUTORITŽT\Lokaler Dienst                             0:00:00 Nicht zutreffend                                                        
+tasklist.exe                  8136 Console                    2         8.400 K Unknown         KARLSPC\Karl Klein                                      0:00:00 Nicht zutreffend                                                        
+
+E:\Sysinternals>quet ry user
+query user
+
+E:\Sysinternals>wmic meo morychip get capacity
+wmic memorychip get capacity
+
+
+
+E:\Sysinternals>^C
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# exit
+exit
+
+Script done on 2023-10-31 10:11:14-04:00 [COMMAND_EXIT_CODE="1"]
