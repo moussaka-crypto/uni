@@ -1,0 +1,9 @@
+FROM myjava8-image
+LABEL maintainer="Andreas Classen <a.classen@fh-aachen.de>"
+WORKDIR /usr/share
+ENV CEREBRO_VERSION=0.9.2
+RUN wget --quiet "https://github.com/lmenezes/cerebro/releases/download/v${CEREBRO_VERSION}/cerebro-${CEREBRO_VERSION}.tgz" && tar xfz cerebro-${CEREBRO_VERSION}.tgz -C ./ && mv cerebro-${CEREBRO_VERSION} cerebro
+WORKDIR cerebro
+ENV ELASTICSEARCH_HOST=http://es1:9200
+EXPOSE 9000
+CMD ["/bin/sh", "-c", "bin/cerebro -Dpidfile.path=/dev/null"]
