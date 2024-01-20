@@ -1,5 +1,34 @@
-# Задачи по Информатика
-## **Year 1 (Първи курс)**
+# Computer Science assignments (Задачи по Информатика)
+
+### *Year 1 (Първи курс)*
+   * #### _ads_ (Algorithms and Data Structures)
+   * #### _dnis_ (Networking and IT-Security)
+   * #### _gip_ (Programming Basics)
+   * #### _m2_ (Advanced Mathematics 2)
+   * #### _ti_ (Computer Engineering)
+   * #### _tilo_ (CS Theory and Logic)
+
+### *Year 2 (Втори курс)*
+   * #### _arbkvs_ (Operating Systems Architecture)
+   * #### _bwl_ (Business Administration for CS)
+   * #### _dbwt_ (Databases and Web Development)
+   * #### _devops_ (Development for Operations)
+   * #### _fitu_ (IT-Management)
+   * #### _ip_ (Interdisciplinary Project)
+   * #### _its2_ (IT-Security 2)
+   * #### _oos_ (Object-Oriented Programming)
+   * #### _swe_ (Software Engineering)
+   * #### _te_ (Ethics of Technology)
+
+### *Year 3 (Трети курс)*
+   * #### _ada_ (Applied Data Analytics)
+   * #### _bda2_ (Big Data Analytics 2)
+   * #### _devsecops_ (Development, Security and Operations)
+   * #### _itf_ (Digital Forensics)
+   * #### _fets_ (Fault-Tolerant Systems)
+
+  <!--
+  ## **Year 1 (Първи курс)**
    * #### _ads_ (Algorithms and Data Structures)
        * [Doubly Linked List implementation and use case for a Twitter Console App](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/DLL-Twitter)
        * [Types of Graphs and implementation of basic Graph traversal Algorithms (Dijkstra, Prim, Kruskal, DFS, BFS)](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads/Graphs_GraphAlgorithms)
@@ -89,10 +118,4 @@
        * Documentation, referring to the topic of my semester presentation
        * My term paper on AI and Robotics
        * The Presentation itself
-    
-  ## **Year 3 (Трети курс)**
-   * #### _ada_ (Applied Data Analytics)
-   * #### _bda2_ (Big Data Analytics 2)
-   * #### _devsecops_ (Development, Security and Operations)
-   * #### _itf_ (Digital Forensics)
-   * #### _fets_ (Fault-Tolerant Systems)
+  -->
