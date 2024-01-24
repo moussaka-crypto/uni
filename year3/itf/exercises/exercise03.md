@@ -23,7 +23,7 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
 **Erweitert 1** | | | |
 0 | 63 (relativ zu Beginn der Partition) / 157311 | - | 52353 | 04 FAT16
 1 | 52479 / 209727 | - | 52353 | 04 FAT16
-2 | `0x 00 01 99 80` (BE) = 104832 / 262080 | - | 50400 | 05 DOS Ext.
+2 | `0x 00 01 99 80` (BE) = 104832 / 262080 | - | 50400 | 05 DOS Extended
 **Erweitert 2** | | | |
 0 | 63 / 262143 | - | `0x C4 A1` (BE) = 50337 | 06 FAT16 > 32 MiB
 1 | - | - | - | -
