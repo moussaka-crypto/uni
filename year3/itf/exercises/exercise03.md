@@ -19,7 +19,7 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
 0 | 63 | 52415 | 52353 | 04 FAT16
 1 | `0x 00 00 CC C0` (BE) = 52416 | 104831 | 52416 | 04 FAT16
 2 | `0x 00 01 99 80` (BE) = 104832 | 157247 | 52416 | 04 FAT16
-3 | 157248 | 312479 | 155232 | 05 DOS Ext.
+3 | `0x 00 02 66 40` (BE) = 157248 | 312479 | 155232 | 05 DOS Extended
 **Erweitert 1** | | | |
 0 | 63 (relativ zu Beginn der Partition) / 157311 | - | 52353 | 04 FAT16
 1 | 52479 / 209727 | - | 52353 | 04 FAT16
