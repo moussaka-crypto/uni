@@ -1,12 +1,7 @@
 #pragma once
 #pragma once
 /*
-CImg-1.6.4
-
-Modifiziert für GIP Zwecke.
-CImgGIP05.h
-Autor der Modifikationen: Andreas Classen.
-Datum der Modifikationen: Dezember 2016.
+CImg-1.6.4 - C++ Template Image Processing Toolkit
 
 #
 #  File            : CImg.h
@@ -27239,7 +27234,7 @@ else { // Anisotropic regularization.
 		/**
 		\param value Reference value.
 		\param metric_mask Metric mask.
-		\note The algorithm code has been initially proposed by A. Meijster, and modified by D. Tschumperlé.
+		\note The algorithm code has been initially proposed by A. Meijster, and modified by D. Tschumperlï¿½.
 		**/
 		template<typename t>
 		CImg<T>& distance(const T& value, const CImg<t>& metric_mask) {
