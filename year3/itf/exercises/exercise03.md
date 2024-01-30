@@ -190,7 +190,7 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
 - Run 1 bei Cluster 2005 -> Clustergrõße 1024
   - 2005 * 1024 = 2053120 (logisch, da MFT-Eintrag für `$MFT` selbst war)
 - Run 2 bei Cluster (2242 + 2005) = 4247
-  - 4247 * 1024 = 4348328 -> Beginnt mit `FILE`
+  - 4247 * 1024 = 4348928 -> Beginnt mit `FILE`
 
 ### Übungsaufgabe 3.7
 #### Übungsaufgabe 3.7.1
