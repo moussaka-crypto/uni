@@ -1,8 +1,0 @@
-FROM ubuntu:18.04
-LABEL maintainer="Andreas Classen <a.classen@fh-aachen.de>"
-WORKDIR /root
-RUN apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y     apt-transport-https ca-certificates wget libfontconfig     libfreetype6 &&     wget --quiet https://artifacts.elastic.co/downloads/kibana/kibana-6.8.13-amd64.deb &&     dpkg -i kibana-*.deb
-COPY kibana_start.sh ./kibana_start.sh
-RUN chmod a+x ./kibana_start.sh
-EXPOSE 5601
-ENTRYPOINT ["/root/kibana_start.sh"]

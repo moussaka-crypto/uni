@@ -1,6 +1,0 @@
----
-DefaultValue: []
-PossibleNone: '0'
-PossibleValues: { 1: 'feature_x', 2: 'feature_y', 3: 'feature_z' }
-TranslatableValues: '0'
-TreeView: '0'
