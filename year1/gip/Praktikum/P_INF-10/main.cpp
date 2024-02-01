@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 #define CIMGGIP_MAIN
-#include "CImgGIP06.h"
+#include "CImgGIP06.h" // separate library for graphical output, irrelevant
 #include "MyRectangle.h"
 
 int main()

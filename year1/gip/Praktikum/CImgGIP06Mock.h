@@ -4,6 +4,7 @@ const unsigned char black[] = { 0, 0, 0 };
 const unsigned char red[] = { 255, 0, 0 };
 const unsigned char green[] = { 0, 255, 0 };
 const unsigned char blue[] = { 0, 0, 255 };
+// custom colors
 const unsigned char indigo[] = { 75, 0, 130 };
 const unsigned char cyan[] = { 90, 234, 234 };
 const unsigned char brown[] = { 166, 42, 42 };
