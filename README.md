@@ -23,7 +23,7 @@
    * #### _te_ (Ethics of Technology)
 
 ### *Year 3 (Трети курс)*
-   * #### _ada_ (Applied Data Analytics) && _bda2_ (Big Data Analytics 2)
+   * #### _ada_ (Applied Data Analytics) & _bda2_ (Big Data Analytics 2)
       * #### [Separate Data Analytics Repo](https://github.com/moussaka-crypto/Data-Analytics)
    * #### _devsecops_ (Development, Security and Operations)
       * #### [Separate Assignments Repo](https://github.com/moussaka-crypto/DevSecOps-Praktikum)
