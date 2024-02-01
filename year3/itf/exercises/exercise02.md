@@ -1,11 +1,11 @@
-### Übungsaufgabe 2.1
+###  2.1
 > Beschreiben Sie kurz welche Ausgabe fport im allgemeinen liefert.
 - `fport` beschreibt zu allen offenen Ports
   - Pfad / Name des dazugehörigen Programms
   - Transportprotokolle
   - Lauschenden Port
 
-### Übungsaufgabe 2.2
+###  2.2
 > Wie viele Verbindungen zu anderen Rechnern existieren?
 
 - 5 Verbindungen

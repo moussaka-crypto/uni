@@ -7,12 +7,10 @@
  * Configuration of master and worker is done by pulling bit 0 on PortC
  * high (client) or low (master)
  *
- * Created: 09.11.2018 13:25:06
  * Update for new ARBKVS Board 20200818
  * Note: The connections to the RX Pins must be directly on the Arduino
  *       The ARBKVS Board has a push-pull stage between PortD0/D1 and its wiring 
  *	     pins so that the input (RX) cannot be used.
- * Author : ie4938e
  */ 
 #include <avr/io.h>
 #include <avr/interrupt.h>

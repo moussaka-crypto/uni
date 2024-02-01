@@ -19,29 +19,29 @@ bool isFibbonacci(int n) {
 }
 
 
-	int arr[6] = {};
-	for (int i = 0; i < 6; i++) {
-		while (arr[i] < 1 || arr[i]>6) {
-			cout << "Die " << i + 1 << ". Zahl des Arrays ? "; cin >> arr[i];
-			cout << endl;
-		}
-	}
-
-	int suchzahl;
-	cout << "Nach welcher Zahl suchen Sie ? "; cin >> suchzahl;
-
-	int count = 0;
-	for (int i = 0; i < 6; i++) {
-		count++;
-		if (suchzahl == arr[i])
-		{
-			cout << "Zahl ist vorgekommen.";
-			break;
-		}
-		if (count == 6)
-			cout << "Die Suchzahl ist nicht vorgekommen. ";
+int arr[6] = {};
+for (int i = 0; i < 6; i++) {
+	while (arr[i] < 1 || arr[i]>6) {
+		cout << "Die " << i + 1 << ". Zahl des Arrays ? "; cin >> arr[i];
+		cout << endl;
 	}
 }
+
+int suchzahl;
+cout << "Nach welcher Zahl suchen Sie ? "; cin >> suchzahl;
+
+int count = 0;
+for (int i = 0; i < 6; i++) {
+	count++;
+	if (suchzahl == arr[i])
+	{
+		cout << "Zahl ist vorgekommen.";
+		break;
+	}
+	if (count == 6)
+		cout << "Die Suchzahl ist nicht vorgekommen. ";
+}
+
 
 std::string removeExclamationMarks(std::string str) {
    std::string str_copy;

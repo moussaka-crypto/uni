@@ -16,7 +16,6 @@
    * #### _devops_ (Development for Operations)
    * #### _fitu_ (IT-Management)
    * #### _ip_ (Interdisciplinary Project)
-   * #### _its2_ (IT-Security 2)
    * #### _oos_ (Object-Oriented Programming)
       * #### [Banking System Project](https://github.com/moussaka-crypto/Bank)
    * #### _swe_ (Software Engineering)

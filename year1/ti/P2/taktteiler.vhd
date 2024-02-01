@@ -6,8 +6,8 @@ entity taktteiler is
 
 
 	port (
-      clk         : in std_logic; --50 MHz
-		clk_10Hz		: out std_logic			
+	clk         : in std_logic; --50 MHz
+	clk_10Hz	: out std_logic			
 		
 		);
 end entity taktteiler;
@@ -38,11 +38,3 @@ end process p;
 clk_10Hz <= clk_10Hz_int;
 
 end architecture arch;
-	
-	
-	
-	
-	
-	
-	
-	

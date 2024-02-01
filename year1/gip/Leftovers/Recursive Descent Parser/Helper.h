@@ -59,14 +59,6 @@ void match(char c, string& input, size_t& pos)
 		<< c << endl;
 }
 
-
-
-
-
-
-
-
-
 void parse_number(string& input, size_t& pos)
 {
 	cout << "Betrete parse_number()" << endl;

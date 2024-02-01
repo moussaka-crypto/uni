@@ -2,8 +2,7 @@
  * init.c
  *
  * Initialization Routines for the Chat Program
- * Created: 09.11.2018 16:42:19
- *  Author: ie4938e
+ * 
  */ 
 #include <avr/io.h>
 #include <avr/interrupt.h>

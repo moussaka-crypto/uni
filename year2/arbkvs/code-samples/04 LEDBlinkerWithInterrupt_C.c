@@ -3,13 +3,11 @@
  *
  * ATMega328p
  *
- * Created: 25.10.2018 14:29:26
- * Author : ie4938e
  */ 
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-// include "m328pdef.inc" entfällt, Properties definieren Gerätetyp und 
+// include "m328pdef.inc" entfï¿½llt, Properties definieren Gerï¿½tetyp und 
 // io.h / interrupt.h setzen dies richtig um
 
 const uint8_t numWaits = 10;
@@ -19,7 +17,7 @@ uint8_t counter = 0;
 ISR(TIMER0_OVF_vect)
 {
 	counter++;
-	TCNT0 = 0x7F; // Zählregister initialisieren
+	TCNT0 = 0x7F; // Zï¿½hlregister initialisieren
 
 	if (counter >= numWaits)
 	{
@@ -39,9 +37,9 @@ void initialize_application()
 void initialize_timer()
 {
 	cli();
-	TCCR0B &= 0b11111000;				// Lösche Bits 0-2 (Timer stopped)
+	TCCR0B &= 0b11111000;				// Lï¿½sche Bits 0-2 (Timer stopped)
 	TCCR0B |= ((1<<CS02) | (1<<CS00));	// CS00 und CS02 setzen: Teiler 1024
-	TCNT0 = 0x00;						// Zählregister initialisieren
+	TCNT0 = 0x00;						// Zï¿½hlregister initialisieren
 	TIMSK0 |= (1<<TOIE0);				// Interrupt maskieren
 	sei();
 }

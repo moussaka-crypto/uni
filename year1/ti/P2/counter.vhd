@@ -8,8 +8,8 @@ entity counter is
 
 	port (
 		reset_n     : in std_logic; -- Key 3
-      clk         : in std_logic; --50 MHz
-		switches		: in std_logic_vector(7 downto 0); -- zur Übernahme des ofl-values
+      	clk         : in std_logic; --50 MHz
+		switches	: in std_logic_vector(7 downto 0); -- zur Übernahme des ofl-values
 		cnt_enable	: in std_logic; -- SW9
 		ofl_rd		: in std_logic; -- read and store ofl-value, KEY0
 		cnt_rd		: in std_logic; -- read and store the actual count-value, KEY1
@@ -70,6 +70,3 @@ cnt_val_stored_out <= not cnt_val_stored_out_int;
 end process counter;
 
 end architecture arch;
-
-
-	

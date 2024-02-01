@@ -2,30 +2,30 @@
 #include <string>
 using namespace std;
 
-//struct Person {
-//	string name;
-//	int alter;
-//};
-//
-//Person willi{ "Willi", 36 };
-//
-//
-//
-//int f(int &x);
-//
-//int f(int x = 30)
-//{
-//	return x * 2;
-//}
+struct Person {
+	string name;
+	int alter;
+};
+
+Person willi{ "Willi", 36 };
+
+
+
+int f(int &x);
+
+int f(int x = 30)
+{
+	return x * 2;
+}
 
 int main() {
-	/*do {
+	do {
 		int i = 2;
 		cout << "i hat den wert: " << i << endl;
 		i++;
-	} while (i * i < 5);*/
+	} while (i * i < 5);
 
-	//cout << f() << endl;
+	cout << f() << endl;
 
 	for (int i = 1; i < 3; i++) {
 		for (int k = 1; k <= 4; k++) {

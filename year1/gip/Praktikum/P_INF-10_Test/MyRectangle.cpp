@@ -1,31 +1,3 @@
-//class MyRectangle {
-//private:
-//	//struct leftangle {
-//	//	int x1, y1;
-//	//};
-//	//struct rightangle {
-//	//	int x2, y2;
-//	//};
-//	int x1, y1; //linke obere Ecke des Rechtecks
-//	int x2, y2; //rechte untere Ecke des Rechtecks
-//
-//public:
-//
-//	//int get_LeftAngleX() const { return x1; }
-//	//int get_LeftAngleY() const { return y1; }
-//	//int get_RightAngleX() const { return x2; }
-//	//int get_RightAngleY() const { return y2; }
-//
-//	void set_x1(int x1_copy) {};
-//	void set_y1(int y1_copy) {};
-//	void set_x2(int x2_copy) {};
-//	void set_y2(int y2_copy) {};
-//
-//	void set(int x1_copy, int y1_copy, int x2_copy, int y2_copy) {};
-//
-//	MyRectangle(int x1_copy = 0, int y1_copy = 0, int x2_copy = 20, int y2_copy = 20) : x1{ x1_copy }, y1{ y1_copy }, x2{ x2_copy }, y2{x2_copy} {};
-//
-//};
 #include <iostream>
 #define CIMGGIP_MAIN
 #include "CImgGIP06.h"

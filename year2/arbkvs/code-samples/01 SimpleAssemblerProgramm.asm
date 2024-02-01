@@ -1,9 +1,3 @@
-;
-; SimpleAssemblerProgramm.asm
-;
-; Created: 10.10.2018 10:55:20
-; Author : ie4938e
-;
 .include "m328pdef.inc"	; Prozessordefinitionen laden
 
 .org 0x000		; Reset Vector
@@ -31,7 +25,7 @@ main:
 
 delayAlt1:
 	nop				; Pause
-	ret				; Rücksprung
+	ret				; Rï¿½cksprung
 
 delayAlt2:
 	ldi r18, 2
@@ -41,8 +35,8 @@ cont:
 	ret
 
 delayAlt3:
-; Sie können gerne den Generator nutzen, 
-; müssen den Code aber erklären können!
+; Sie kï¿½nnen gerne den Generator nutzen, 
+; mï¿½ssen den Code aber erklï¿½ren kï¿½nnen!
 
 ; Assembly code auto-generated
 ; by utility from Bret Mulvey

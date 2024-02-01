@@ -4,9 +4,9 @@ use ieee.std_logic_1164.all;
 
 entity multiplexer is
 	port(
-		A:		in std_logic_vector(7 downto 0);			-- zu multiplexende Eingangssignale Pin-Belegung beginnend bei A0: SW0 rechter Schalter bis A7: SW7 dritter Schalter von links
-		S:		in std_logic_vector(2 downto 0);			-- Adresse
-		X:		out std_logic -- Output auf LED
+		A:		in std_logic_vector(7 downto 0);	-- zu multiplexende Eingangssignale Pin-Belegung beginnend bei A0: SW0 rechter Schalter bis A7: SW7 dritter Schalter von links
+		S:		in std_logic_vector(2 downto 0);	-- Adresse
+		X:		out std_logic 						-- Output auf LED
 	);
 
 end multiplexer;

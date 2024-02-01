@@ -15,9 +15,8 @@ int main()
     Catch::Session().run();
 
     // Ihr Code ab hier ...
-
-    //char text[max_len] = { 0 };
-    //char zkette[max_len] = { 0 };
+    // char text[max_len] = { 0 };
+    // char zkette[max_len] = { 0 };
     
     char text[max_len] = "";
     char zkette[max_len] = "";
@@ -27,12 +26,13 @@ int main()
     cout << "bitte geben sie die zu suchende zeichenkette ein: ";
     cin.getline(zkette, max_len);
 
- /*    do {
+    do {
           cout << "bitte geben sie die zu suchende zeichenkette ein: ";
           cin.ignore('\n');
           cin.getline(zkette, max_len);
           
-    } while (zkette == "");*/
+    } while (zkette == "");
+
     int zk_result = zeichenkette_suchen(text, zkette);
     if (zk_result == -1)
         cout << "Die Zeichenkette '" << zkette << "' ist NICHT in dem Text '" << text << "' enthalten." << endl;

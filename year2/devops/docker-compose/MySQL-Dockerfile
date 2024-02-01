@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEL maintainer="Andreas Classen <a.classen@fh-aachen.de>"
+LABEL maintainer="Hristomir Dimov <dimov@fh-aachen.de>"
 
 RUN apt-get update \
   && apt-get install -y -qq tar git-core curl nano wget net-tools build-essential mysql-server mysql-client libmysqlclient-dev inetutils-ping

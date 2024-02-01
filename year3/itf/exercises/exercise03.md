@@ -1,4 +1,4 @@
-### Übungsaufgabe 3.1 & 3.2
+###  3.1 & 3.2
 
 - `F4 FE 8F 8A`
   - `F4` = 1111 0100
@@ -29,43 +29,43 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
 1 | - | - | - | -
 2 | - | - | - | -
 
-### Übungsaufgabe 3.3
-#### Übungsaufgabe 3.3.1
+###  3.3
+####  3.3.1
 - FAT16
 
-#### Übungsaufgabe 3.3.2
+####  3.3.2
 - 8 Sektoren reserviert
 
-#### Übungsaufgabe 3.3.3
+####  3.3.3
 - Sektoren
   - FAT 0 (8 - 31)
     - Bytes: 8 * 512 bis 32 * 512-1
   - FAT 1 (32 - 55)
     - Bytes: 32 * 512 bis 56 * 512-1
 
-#### Übungsaufgabe 3.3.4
+####  3.3.4
 - Beide beginnen mit `F8 FF FF FF` (Einträge 0 und 1), darauffolgend 0
 
-#### Übungsaufgabe 3.3.5
+####  3.3.5
 - `F8 FF`: Media Descriptor -> Festplatte
 - `FF FF`: `EOF`-Marker
 - Rest 0: FAT komplett gelöscht
 
-#### Übungsaufgabe 3.3.6
+####  3.3.6
 - Root-Dir: Sektoren 56 - 87
   - Bytegrenzen 56 * 512 bis 88 * 512-1 (28.672 - 45.055)
 
-#### Übungsaufgabe 3.3.7
+####  3.3.7
 - Dokubereich: Beginnend mit Root-Dir bei Byte 28.672
   - Cluster-Bereich dahinter mit Byte 45.056
 
-#### Übungsaufgabe 3.3.8
+####  3.3.8
 - Cluster: 1024 Bytes, 2 Sektoren groß
 
-#### Übungsaufgabe 3.3.9
+####  3.3.9
 - Cluster 2 besteht aus Sektoren: 88 und 89
 
-#### Übungsaufgabe 3.3.10
+####  3.3.10
 - Cluster n (2 <= n <= 5973)
   - 2: 88, 89
   - 3: 90, 91
@@ -73,35 +73,35 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
   - 5: 94, 95
   - n: 84+2n, 85+2n
 
-#### Übungsaufgabe 3.3.11
+####  3.3.11
 - Bytes: Cluster n: (84+2n) * 512
 
-### Übungsaufgabe 3.4
-#### Übungsaufgabe 3.4.1
+###  3.4
+####  3.4.1
 - `_RAG1.DAT`, `_RAG2.DAT`, `_ING.DAT`, `_ULT1.DAT`, `_IR1`
 
-#### Übungsaufgabe 3.4.2
+####  3.4.2
 - Flag-Byte Nr. 11 -> `0x10` -> 0001 0000 -> Directory
 
-#### Übungsaufgabe 3.4.3
+####  3.4.3
 - Zu `_IR1` gehörende Cluster:
   - `0x 0D 00` LE = `0x 00 0D` BE = 13
   - 13 Cluster = n = 13 (84 + 2n)
   - (84 + 2 * 13) * 512 = 56320 (Multiplikation ergibt Byte-Anzahl, sonst Sektor)
 
-#### Übungsaufgabe 3.4.4
+####  3.4.4
 - `.`, `..`, `DIR2`, `MULT2.DAT`
 
-#### Übungsaufgabe 3.4.5
+####  3.4.5
 - Start-Cluster: `0x 12 00` (LE) = `0x 00 12` (BE) = 18 (dez.)
 - (84 + 2 * 18) * 512 = 61440 -> Byte der Startadresse
 - Größe: `0x B3 06 00 00` (LE) = `0x 00 00 06 B3` (BE) = 1715 (dez.)
 - Letztes Byte: 61440 + 1715 - 1 = 63154
 
-#### Übungsaufgabe 3.4.6
+####  3.4.6
 - Block kopiert, Hash stimmt
 
-#### Übungsaufgabe 3.4.7
+####  3.4.7
 - `DIR2` hat Startcluster: `0x 10 00` (LE) = `0x 00 10` (BE) = 16 (dez.)
 - (84 + 2 * 16) * 512 = 59392
 - `FRAG3.DAT` ist einzige Datei
@@ -113,34 +113,34 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
   - In Wirklichkeit: Fragmentiert
     - Beispielsweise Teil von Cluster 17 und Ende von Cluster 25 anders verwendet
 
-### Übungsaufgabe 3.5
-#### Übungsaufgabe 3.5.1
+###  3.5
+####  3.5.1
 - `0x 00 02` (LE) = `0x 02 00` (BE) -> 512 Bytes
 
-#### Übungsaufgabe 3.5.2
+####  3.5.2
 - Stimmt, zumindest wenn LE in BE umgewandelt wird
 
-#### Übungsaufgabe 3.5.3
+####  3.5.3
 - Byte 13: `0x 02` = 2 dez Sektoren pro Cluster -- mit Aufgabe 1 -> 1024 Bytes pro Cluster
 
-#### Übungsaufgabe 3.5.4
+####  3.5.4
 - MFT-Eintrags-Größe: `0x 01` -> 1 Cluster bzw. 1024 Bytes
 
-#### Übungsaufgabe 3.5.5
+####  3.5.5
 - Index-Record-Größe: `0x 04` -> 4 Cluster oder 4096 Bytes
 
-#### Übungsaufgabe 3.5.6
+####  3.5.6
 - MFT startet bei Byte: `0x D5 07 00 00 00 00 00 00` (LE) = `0x 00 00 00 00 00 00 07 D5` (BE) = 2005 dez (Cluster)
 - Um Byte zu erhalten: Mit Clustergröße multiplizieren -> 2005 * 1024 = 2053120
 
-### Übungsaufgabe 3.6
-#### Übungsaufgabe 3.6.1
+###  3.6
+####  3.6.1
 - Stimmt
 
-#### Übungsaufgabe 3.6.2
+####  3.6.2
 - Byte 20 - 21 des MFT-Headers -> `0x 38 00` (LE) = `0x 00 38` (BE) = 56 (dez.)
 
-#### Übungsaufgabe 3.6.3
+####  3.6.3
 - Erstes Attribut
   - Byte 56 - 59 geben Typ an (relativ 0-3)
   - Typ: `0x 10 00 00 00` (LE) = `0x 00 00 00 10` (BE) = 16 (dez.) = `$STANDARD_INFORMATION`
@@ -158,20 +158,20 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
   - Offset: `0x 18 00` (LE) = 24 (dez.)
   - Start: 2053296
 
-#### Übungsaufgabe 3.6.4
+####  3.6.4
 - Typ: `0x 80 00 00 00` (LE) = 128 (dez.) -> `$DATA`
 - Länge: `0x 50 00 00 00` (LE) = 80 (dez.)
 - Non-resident-Flag: `0x 01` -> non-resident
 
-#### Übungsaufgabe 3.6.5
+####  3.6.5
 - Erster logischer Cluster: `0x 00 00 00 00 00 00 00 00` (LE) = 0 (dez.)
 - Letzter logischer Cluster: `0x 2F 00 00 00 00 00 00 00 00` (LE) = `0x 2F` (BE) = 47 (dez.)
 
-#### Übungsaufgabe 3.6.6
+####  3.6.6
 - Offset zur Runlist: `0x 40 00` (LE) = 64 (dez., relativ zum Attributbeginn)
   - Beginnt also bei 2053440
 
-#### Übungsaufgabe 3.6.7
+####  3.6.7
 - Runlist beginnt mit `0x 21 10 D5 07 | 21 20 C2 08 ...`
   - 1 Byte Run length
   - 2 Bytes Run offset
@@ -182,52 +182,52 @@ Tabelle | Erster Sektor (LBA) | Letzter Sektor (LBA) | Anzahl Sektoren | Dateisy
     - Länge: `0x 20` = 32 (dez.)
     - Offset: `0x C2 08` (LE) = `0x 08 C2` (BE) = 2242 (dez.)
 
-#### Übungsaufgabe 3.6.8
+####  3.6.8
 - 48 Cluster insgesamt (passt zu logischen Clustern aus Aufgabe 5)
   - Nächstes Byte: `00`
 
-#### Übungsaufgabe 3.6.9
+####  3.6.9
 - Run 1 bei Cluster 2005 -> Clustergrõße 1024
   - 2005 * 1024 = 2053120 (logisch, da MFT-Eintrag für `$MFT` selbst war)
 - Run 2 bei Cluster (2242 + 2005) = 4247
   - 4247 * 1024 = 4348928 -> Beginnt mit `FILE`
 
-### Übungsaufgabe 3.7
-#### Übungsaufgabe 3.7.1
+###  3.7
+####  3.7.1
 - `$INDEX_ROOT`-Attribut: Byte 2064640 (Zu erkennen an `90 00 00 00`)
 - Attributadresse + Offset = Beginn des Inhalts
 - 2064640 + 32 = 2064672
   - **Start + Länge - 1 = Ende**
   - 2065015
 
-#### Übungsaufgabe 3.7.2
+####  3.7.2
 - Typ ist `0x 30 00 00 00` (LE) -> `0x 00 00 00 30` (BE) = 48 dez = `$FILE_NAME`
 
-#### Übungsaufgabe 3.7.3
+####  3.7.3
 > Size of each index record in bytes / clusters
 
 - Länge in Bytes: `0x 00 10 00 00` (LE) = `0x 00 00 10 00` (BE) = 16^3 = 4096
 - Länge in Clustern: `04` je 1024 Bytes
 
-#### Übungsaufgabe 3.7.4
+####  3.7.4
 - Offset: Erste 4 Bytes als Header (Adresse 2064688)
 - `0x 00 00 00 10` (BE) = 16 (dez.)
 
-#### Übungsaufgabe 3.7.5
+####  3.7.5
 - Ende der Einträge: (Bytes 4 - 7)
   - `0x 00 00 01 48` (BE) = 328 Bytes
   - Relativ zum Node Header: 2065015
 
-#### Übungsaufgabe 3.7.6
+####  3.7.6
 - MFT-Eintrag: Die ersten 6 Bytes
 - `0x 15 00 .. 00` (LE) = 25 (dez.)
 - Länge des Index-Eintrags: `0x 00 60` (BE) = 96 (dez.)
 
-#### Übungsaufgabe 3.7.7
+####  3.7.7
 - File Name-Attribut beginnt nach 16 Bytes (`0B` ...)
 - Dateiname nach weiteren 66 Bytes: `$ObjId`
 
-#### Übungsaufgabe 3.7.8
+####  3.7.8
 - Suche 25. Eintrag in `$MFT`
 - 48 Cluster `$MFT`
 - Zweiter Run beginnt bei MFT-Eintrag 16 (Byte 4348328)

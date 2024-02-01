@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 entity demultiplexer is 
 
 	port(
-		a:		in std_logic;			-- zu demultiplexendes Eingangssignal SW0 
+		a:		in std_logic;					 -- zu demultiplexendes Eingangssignal SW0 
 		s:		in std_logic_vector(2 downto 0); -- Adresse: Key 2..0			
 		x:		out std_logic_vector(7 downto 0) -- Output auf LEDs
 	);

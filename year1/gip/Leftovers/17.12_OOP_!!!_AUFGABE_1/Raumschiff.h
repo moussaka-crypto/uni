@@ -29,9 +29,6 @@ public:
 	bool set_coordinates(int x1, int y1) {
 
 		if (0 <= x1 < screen_width && 0 <= y1 < screen_height) {
-			
-			/*x = x1;
-			y = y1;*/ //Alternativ, aber unschön:
 			set_x(x1);
 			set_y(y1);
 			return true;

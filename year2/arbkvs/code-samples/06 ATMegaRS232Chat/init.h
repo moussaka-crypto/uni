@@ -3,8 +3,6 @@
  *
  * initialization routines and definitions
  *
- * Created: 09.11.2018 16:42:58
- *  Author: ie4938e
  */ 
 
 

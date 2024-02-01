@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	/*int result =*/ Catch::Session().run();
+	Catch::Session().run();
 
 	system("PAUSE");
 	return 0;
