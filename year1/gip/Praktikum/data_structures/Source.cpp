@@ -4,6 +4,23 @@
 #include <list>
 using namespace std;
 
+void reverse(const string& s, int pos = 0) {
+	if (pos < s.length()) {
+		reverse(s, pos + 1);
+		cout << s.at(pos);
+	}
+}
+
+string reverse(string& s, int pos = 0) {
+
+	if (pos < s.length()) {
+		reverse(s, pos + 1);
+	}
+	string sr;
+	sr += s.at(pos);
+	return sr;
+}
+
 int main()
 {
 	map< int, string > hash_1;
@@ -65,7 +82,7 @@ int main()
 
 	for (list<int>::iterator it = mylist.begin(); it != mylist.end(); ++it)
 	{
-		cout << *it << endl; // … wie das Dereferenzieren eines Pointers
+		cout << *it << endl; // â€¦ wie das Dereferenzieren eines Pointers
 	}
 
 
