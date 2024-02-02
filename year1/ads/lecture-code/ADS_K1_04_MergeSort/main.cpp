@@ -39,6 +39,82 @@ void print(std::vector<int> const& Vector) {
 }
 
 /**
+ * Insertion-Sort Algorithmus
+ *
+ * \param[in/out] A	Eingabe: unsortierte Array-Werte,
+ *					Ausgabe: sortierte Array-Werte
+ **/
+void InsertionSort (vector<int>& A)
+{
+	int j, key, i;
+	for (j = 1; j < A.size(); j++) {// Schleife über alle Werte
+		key = A[j];						// einzusortierender Wert
+		i = j - 1;
+		// Werte zwischen Index 0 und i sind sortiert
+		// der einzusortierende Wert wird an der richtigen Stelle im sortierten Abschinitt eingefügt
+		while (i >= 0 && A[i] > key) {
+			A[i + 1] = A[i];			// Verschieben der größeren Werte von i nach i + 1
+			i--;
+		}
+		A[i + 1] = key;					// Einfügestelle gefunden -> Werte zwischen Index 0 in j sind sortiert
+	}
+	return;
+}
+
+void InsertionSort2(vector<int>& A)
+{
+	int tmp, i, j;
+	for (i = 1; i < A.size(); i++)
+	{
+		tmp = A[i];
+		j = i;
+		while (j > 0 && A[j-1] > tmp)
+		{
+			A[j] = A[j-1];
+			j--;
+		}
+		A[j] = tmp;
+	}
+
+}
+
+void SelectionSort(vector<int>& A)
+{
+	int i, j, min, tmp;
+	int N = A.size();
+	for (i = 0; i < N-1; i++)
+	{
+		min = i;
+		for (j = i + 1; j < N; j++)
+		{
+			if (A[j] < A[min]) min = j;
+		}
+		tmp = A[min]; 
+		A[min] = A[i]; 
+		A[i] = tmp;
+	}
+
+}
+
+void BubbleSort(vector<int>& A)
+{
+	int i, j, tmp;
+	int N = A.size();
+	for (int i=0; i < N-1; i++)
+	{
+		for (int j = N-1; j > i; j--)
+		{
+			if (A[j] < A[j-1])
+			{
+				int tmp = A[j];
+				A[j] = A[j-1];
+				A[j-1] = tmp;
+			}
+		}
+	}
+}
+
+/**
  *	Merge - diese Funktion vereinigt zwei sortierte Arrays (Teile im Array)
  *
  */
@@ -47,7 +123,7 @@ void Merge(std::vector<int>& A, size_t l, size_t m, size_t r) {
 	const size_t n1 = m - l + 1;
 	const size_t n2 = r - m;
 	
-	// linkes (L) und rechtes (R) Array f�llen
+	// linkes (L) und rechtes (R) Array füllen
 	std::vector<int> L(n1);
 	std::vector<int> R(n2);
 	for (i = 0; i < n1; i++) {
@@ -56,7 +132,7 @@ void Merge(std::vector<int>& A, size_t l, size_t m, size_t r) {
 	for (j = 0; j < n2; j++) {
 		R[j] = A[m +1+j];
 	}
-	// Z�hlervariablen zur�cksetzen
+	// Zählervariablen zurücksetzen
 	i = 0;
 	j = 0;
 	k = l;
@@ -137,6 +213,10 @@ int main() {
 
 	// sortieren mit Merge Sort + Zeitmessung
 	auto start = std::chrono::high_resolution_clock::now();
+	//InsertionSort(A);
+	//InsertionSort2(A); 
+	//SelectionSort(A);
+	//BubbleSort(A);
 	MergeSort(A);					
 	auto finish = std::chrono::high_resolution_clock::now();
 	
