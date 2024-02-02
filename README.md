@@ -1,7 +1,7 @@
 # Computer Science assignments (Задачи по Информатика)
 
 > [!NOTE]
-> Entries with a <strong>*</strong> at the end lack their own directories, instead the corresponding repos is linked. <br>
+> Entries with a <strong>*</strong> at the end lack their own directories, instead the corresponding repo is linked. <br>
 > (Със звездичка са маркирани предметите, за които липсва отделна папка. Към тях са добавени връзки за съответните хранилища.) 
 
 ### *Year 1 (Първи курс)*
