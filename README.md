@@ -1,8 +1,8 @@
 # Computer Science assignments (Задачи по Информатика)
 
 > [!NOTE]
-> Entries with a <strong>*</strong> at the end lack their own directories, instead the corresponding repo is linked. <br>
-> (Със звездичка са маркирани предметите, за които липсва отделна папка. Към тях са добавени връзки за съответните хранилища.) 
+> Entries with a <strong>*</strong> at the end lack their own directories, instead the corresponding project repositories are linked. <br>
+> (Със звездичка са маркирани предметите, за които липсва отделна папка. Към тях са добавени връзки за съответните хранилища с проектни задачи.) 
 
 ### *Year 1 (Първи курс)*
    * #### _ads_ (Algorithms and Data Structures)
