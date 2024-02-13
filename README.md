@@ -1,8 +1,7 @@
 # Computer Science assignments (Задачи по Информатика)
 
 > [!NOTE]
-> Entries with a <strong>*</strong> at the end lack their own directories, instead the corresponding project repositories are linked. <br>
-> (Със звездичка са маркирани предметите, за които липсва отделна папка. Към тях са добавени връзки за съответните хранилища с проектни задачи.) 
+> Със звездичка са маркирани предметите, за които липсва отделна папка. Към тях са добавени връзки за съответните хранилища с проектни задачи.
 
 ### *Year 1 (Първи курс)*
    * #### _ads_ (Algorithms and Data Structures)
@@ -24,7 +23,7 @@
    * #### _te_ (Ethics of Technology)
 
 ### *Year 3 (Трети курс)*
-   * #### _ada*_ (Applied Data Analytics) & _bda2*_ (Big Data Analytics 2) &rarr; [Data Analytics Assignments](https://github.com/moussaka-crypto/Data-Analytics)
+   * #### _ada*_ (Applied Data Analytics) <br> _bda2*_ (Big Data Analytics 2) &rarr; [Data Analytics Assignments](https://github.com/moussaka-crypto/Data-Analytics)
    * #### _devsecops_ (Development, Security and Operations) &rarr; [DevSecOps Assignments](https://github.com/moussaka-crypto/DevSecOps-Praktikum)
    * #### _itf_ (Digital Forensics)
    * #### _fets*_ (Fault-Tolerant Systems) &rarr; [Database Cluster Project](https://github.com/moussaka-crypto/DB-Cluster)
