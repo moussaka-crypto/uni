@@ -6,7 +6,7 @@
 
 | Folder  |           Subject                    |             Assignment Links                                               |
 |:------------:|:-----------------------------------:|:--------------------------------------------------------------:|
-| **Year 1**   |     __Oct 2021 - Jul 2022__         | ![C++](https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white) ![Prolog](https://custom-icon-badges.demolab.com/badge/Prolog-E61B23.svg?logo=swi-prolog&logoColor=white) ![VHDL](https://custom-icon-badges.demolab.com/badge/VHDL-808080.svg?logo=gear&logoColor=white)|
+| **Year 1**   |     __Oct 2021 - Jul 2022__         | ![C++](https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white) ![VHDL](https://custom-icon-badges.demolab.com/badge/VHDL-808080.svg?logo=gear&logoColor=white) ![Prolog](https://custom-icon-badges.demolab.com/badge/Prolog-E61B23.svg?logo=swi-prolog&logoColor=white) |
 | _ads_          | Algorithms and Data Structures      | [C++ Assignments & Lecture Code](https://github.com/moussaka-crypto/Uni/tree/main/year1/ads)  |
 | _dnis_         | Networking and IT-Security Fundamentals | [Assignment Files](https://github.com/moussaka-crypto/Uni/tree/main/year1/dnis) |
 | _gip_          | Programming Basics                  |  [C++ Assignments, Exercises and Leftover Code](https://github.com/moussaka-crypto/Uni/tree/main/year1/gip) |
