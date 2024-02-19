@@ -22,15 +22,15 @@
 | _fitu_         | IT-Management                       | [Assignment Files and Presentation](https://github.com/moussaka-crypto/Uni/tree/main/year2/fitu) |
 | _ip_           | Interdisciplinary Project           | [Project Files and Presentation](https://github.com/moussaka-crypto/Uni/tree/main/year2/ip)                                                                 |
 | _oos_          | Object-Oriented Programming         | [**Banking System Project**](https://github.com/moussaka-crypto/Bank), [Lecture Code](https://github.com/moussaka-crypto/Uni/tree/main/year2/oos) |
-| _swe*_         | Software Engineering*               | [Pong Game Project](https://github.com/moussaka-crypto/Pong)      |
+| _-_         | Software Engineering*               | [Pong Game Project](https://github.com/moussaka-crypto/Pong)      |
 | _te_           | Ethics of Technology                | [Presentation and Term Paper Files](https://github.com/moussaka-crypto/Uni/tree/main/year2/te)    |
 |              |                                      |                                                                  |
 | **Year 3**   |     __Oct 2023 - Feb 2024__           | ![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?logo=Jupyter&logoColor=white) ![Numpy](https://img.shields.io/badge/Numpy-013243.svg?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4.svg?logo=php&logoColor=white) ![Python](https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-121011.svg?logo=gnu-bash&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000.svg?logo=markdown&logoColor=white) |
-| _ada*_         | Applied Data Analytics*              | [Jupyter Notebook Assignments](https://github.com/moussaka-crypto/Data-Analytics/tree/master/ada) |
-| _bda2*_        | Big Data Analytics 2*                | [Jupyter Notebook Assignments & Exercises](https://github.com/moussaka-crypto/Data-Analytics/tree/master/bda2) |
+| _-_         | Applied Data Analytics*              | [Jupyter Notebook Assignments](https://github.com/moussaka-crypto/Data-Analytics/tree/master/ada) |
+| _-_        | Big Data Analytics 2*                | [Jupyter Notebook Assignments & Exercises](https://github.com/moussaka-crypto/Data-Analytics/tree/master/bda2) |
 | _devsecops_    | Development, Security and Operations |                           TBA                                                  |
 | _itf_          | Digital Forensics                   | [Assignment Files & Exercises](https://github.com/moussaka-crypto/Uni/tree/main/year3/itf) |
-| _fets_         | Fault-Tolerant Systems*              | [Database Cluster Project](https://github.com/moussaka-crypto/DB-Cluster) |
+| _-_         | Fault-Tolerant Systems*              | [Database Cluster Project](https://github.com/moussaka-crypto/DB-Cluster) |
 
 
 <!--* #### _devsecops_ (Development, Security and Operations) &rarr; [DevSecOps Assignments](https://github.com/moussaka-crypto/DevSecOps-Praktikum)--> 
