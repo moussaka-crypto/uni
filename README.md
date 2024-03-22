@@ -22,16 +22,14 @@
 | _fitu_         | IT-Management                       | [Assignment Files & Presentation](https://github.com/moussaka-crypto/Uni/tree/main/year2/fitu) |
 | _ip_           | Interdisciplinary Project           | [Project Files & Presentation](https://github.com/moussaka-crypto/Uni/tree/main/year2/ip)                                                                 |
 | _oos_          | Object-Oriented Programming         | [**Banking System Project**](https://github.com/moussaka-crypto/Bank), [Lecture Code](https://github.com/moussaka-crypto/Uni/tree/main/year2/oos) |
-| _-_            | Software Engineering*               | [Pong Game Project](https://github.com/moussaka-crypto/Pong)      |
+| _-_            | Software Engineering*               | [**Pong Game Project**](https://github.com/moussaka-crypto/Pong)      |
 | _te_           | Ethics of Technology                | [Presentation & Term Paper Files](https://github.com/moussaka-crypto/Uni/tree/main/year2/te)    |
 |                |                                      |                                                                  |
 |                |                                      |                                                                  |
 |   *Year 3*   |     _Oct 2023 - Feb 2024_           | ![Jupyter](https://img.shields.io/badge/Jupyter-f47424.svg?logo=Jupyter&logoColor=white) ![Numpy](https://img.shields.io/badge/Numpy-013243.svg?logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/sklearn-669ba7?logo=scikit-learn&logoColor=white) ![Docker](https://custom-icon-badges.demolab.com/badge/Docker-0db7ed.svg?logo=docker&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-747bb3.svg?logo=php&logoColor=white) ![Python](https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-121011.svg?logo=gnu-bash&logoColor=white) ![Vim](https://custom-icon-badges.demolab.com/badge/Vim-049b33.svg?logo=vim&logoColor=white) ![GitHub](https://custom-icon-badges.demolab.com/badge/GitHub-6a2486.svg?logo=github&logoColor=white) ![NGINX](https://custom-icon-badges.demolab.com/badge/NGINX-009900.svg?logo=nginx&logoColor=white) ![ThreatDragon](https://custom-icon-badges.demolab.com/badge/ThreatDragon-ebebeb.svg?logo=threatdragon&logoColor=black) ![OWASP](https://custom-icon-badges.demolab.com/badge/OWASP-253e81.svg?logo=owasp&logoColor=white) ![Sonarcloud](https://custom-icon-badges.demolab.com/badge/Sonarcloud-f48952.svg?logo=sonarcloud&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000.svg?logo=markdown&logoColor=white) ![Slidev](https://custom-icon-badges.demolab.com/badge/Slidev-43bcd1.svg?logo=sli.dev&logoColor=white) |
-| _-_            | Applied Data Analytics*              | [Jupyter Notebook Assignments](https://github.com/moussaka-crypto/Data-Analytics/tree/master/ada) |
-| _-_            | Big Data Analytics 2*                | [Jupyter Notebook Assignments & Exercises](https://github.com/moussaka-crypto/Data-Analytics/tree/master/bda2) |
-| _devsecops_    | Development, Security and Operations |                           TBA                                                  |
+| _-_            | Applied Data Analytics*              | [**Jupyter Notebooks**](https://github.com/moussaka-crypto/Data-Analytics/tree/master/ada) |
+| _-_            | Big Data Analytics 2*                | [**Jupyter Notebooks**](https://github.com/moussaka-crypto/Data-Analytics/tree/master/bda2) |
+| _devsecops_    | Development, Security and Operations | [**DevSecOps Assignments**](https://github.com/moussaka-crypto/DevSecOps-Praktikum) |
 | _itf_          | Digital Forensics                    | [Assignment Files & Exercises](https://github.com/moussaka-crypto/Uni/tree/main/year3/itf) |
-| _-_            | Fault-Tolerant Systems*              | [Database Cluster Presentation](https://github.com/moussaka-crypto/DB-Cluster) |
+| _-_            | Fault-Tolerant Systems*              | [**Database Cluster Presentation**](https://github.com/moussaka-crypto/DB-Cluster) |
 
-
-<!--[DevSecOps Assignments](https://github.com/moussaka-crypto/DevSecOps-Praktikum)--> 
