@@ -32,5 +32,5 @@
 | _devsecops_    | Development, Security and Operations | [**DevSecOps Assignments**](https://github.com/moussaka-crypto/DevSecOps-Praktikum) |
 | _itf_          | Digital Forensics                    | [Assignment Files & Exercises](https://github.com/moussaka-crypto/Uni/tree/main/year3/itf) |
 | _-_            | Fault-Tolerant Systems*              | [**Database Cluster Presentation**](https://github.com/moussaka-crypto/DB-Cluster) |
-| _infoviz_            | Information Visualization            | - |
+| _infoviz_      | Information Visualization            | [Dashboard Assignment](https://github.com/moussaka-crypto/Uni/tree/main/year3/infoviz) |
 
