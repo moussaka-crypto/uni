@@ -36,7 +36,6 @@
 |                |                                      |                                                                  |
 |                |                                      |                                                                  |
 |                |                                      |                                                                  |
-<!--|  *Internship*  |      _Mar 2024 - Aug 2024_           |   **TBP**                                                        |
-|  *Final Year*  |      _Oct 2024 - May 2025_           |   **TBP**                                                        |
-| _-_            |            Project*                  |   **TBP**                                                        |
+|  *Internship*  |      _Mar 2024 - Aug 2024_           | ![Python](https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black) ![C](https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white) ![C++](https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white)  ![Jira](https://img.shields.io/badge/Jira-0355cf.svg?logo=jira&logoColor=white) ![Bitbucket](https://img.shields.io/badge/Bitbucket-2784fe.svg?logo=bitbucket&logoColor=white) ![Typst](https://img.shields.io/badge/Typst-54a7b5.svg?logo=typst&logoColor=white)                                                     |
+<!--|  *Final Year*  |      _Oct 2024 - May 2025_           |   **TBP**                                                        |
 | _-_            |            Thesis*                   |   **TBP**                                                        | -->
