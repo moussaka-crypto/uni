@@ -1,8 +1,7 @@
 ## Bachelor's Thesis: Zero Trust Security Architectures in Smart Home Environments
 
 ### FH Aachen
-**Department of Electrical Engineering and Information Technology**  
-**Prof. Dr. Georg Neugebauer** \
+**Department of Electrical Engineering and Information Technology** \
 *IT Security Subject Area* 
 
 ### Submitted by:
@@ -12,11 +11,11 @@
 **Computer Science**  
 
 ### Date:
-**14. April 2025**  
+**14. April 2025** 🚬
 
 ### Supervisors:
 - **Prof. Dr. Georg Neugebauer**
-- **Co-supervisor: M.Eng. Sacha Hack**
+- **M.Eng. Sacha Hack**
 
 ---
 
