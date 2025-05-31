@@ -1,0 +1,204 @@
+    % diese Vorlage wurde 2011 von Tobias Banaszak erstellt. post@tobiasb.de
+% sie wurde im Juni 2012 etwas angepasst und erweitert.
+%
+\documentclass[
+%a5paper,						% alle weiteren Papierformat einstellbar
+%landscape,						% Querformat
+%10pt,							% Schriftgröße (12pt, 11pt (Standard))
+12pt,							% Schriftgre (12pt, 11pt (Standard))
+oneside,							% einseitiges Layout
+%twocolumn,						% zweispaltiger Satz
+openany,							% Kapitel können auch auf linken Seiten beginnen
+headsepline,						% Trennline zum Seitenkopf	
+%footsepline,					% Trennline zum Seitenfuß
+%chapterprefix,					% vor Kapitelberschrift wird "Kapitel Nummer" gesetzt
+%appendixprefix,					% Anhang wird "Anhang" vor die Überschrift gesetzt 
+listof=flat,						% setzt z.B. das Abbvz neu, falls die Nummern in die Beschreibung rein ragt
+%draft,							% überlange Zeilen in Ausgabe kennzeichnen, setzt keine Bilder un Listings.
+numbers=noenddot					% macht aus der Überschrift 1.1. den letzten Punkt weg
+]{scrbook}
+
+\pagestyle{headings}				% lebender Kolumnentitel  
+\newcommand{\n}{\newline}
+\usepackage{setspace}
+\onehalfspacing					% 1,5facher Zeilenabstand
+\usepackage{caption}
+%% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}	% iso 8859-1 (latin-1) als standart
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{lipsum}
+\bibliographystyle{IEEEtran}
+\usepackage[backend=biber,style=ieee,block=ragged]{biblatex}
+\addbibresource{BA_Bib.bib}
+\usepackage{csquotes}
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} 			% Zum Laden von Grafiken
+\usepackage{ctable}				% bunte Tabellen (z.B. grau hinterlegte Spalten)
+%more table packages
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+\newcommand{\comment}[1]{}
+
+%% Bibliographiestil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{natbib} 
+
+%% Sonstiges Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[absolute]{textpos}	% Bilder absolut positionieren. Für Logo auf Titelseite
+\usepackage{float}
+
+% For colors
+\usepackage{xcolor}
+
+% For minted
+\usepackage{minted}
+\setminted{
+  breaklines=true,
+  linenos,
+  fontsize=\footnotesize,
+  frame=lines,
+  bgcolor=gray!12,
+}
+
+% For placing captions outside of float environments
+\usepackage{caption}
+% Links klickbar machen (sowohl zu Kapiteln/anderen Referenzen, als auch ins Web:
+%
+\usepackage[bookmarksnumbered,final]{hyperref}
+% für den Druck die folgende Zeile nutzen, damit die Links nicht gesetzt werden
+%\usepackage[bookmarksnumbered,draft]{hyperref}
+\def\UrlBreaks{\do\/\do-}
+ %\usepackage{breakurl}			% bricht URLs um, besonders im Literaturverz. für den Druck auskommentieren
+								% ist aber nur nötig, wenn man nicht direkt nach PDF setzt (also latex->dvi->ps->pdf)
+								
+\usepackage{subfigure} 			%mehrere Bilder in einer Figure
+ 
+%für den pdf-Reader
+\hypersetup{
+	pdfpagelayout=TwoPageRight, %erste Seite ist Titelseite
+	pdfstartview=Fit,
+	pdfauthor={}, 
+pdftitle={},
+pdfsubject={Bachelorarbeit},
+pdfkeywords={Bachelorarbeit}
+}
+
+\usepackage[final]{listings}		%Quellcode-Listings. final, damit die auch bei draft gesetzt werden
+\usepackage{color}					%farben
+%\definecolor{DarkGrey}{cmyk}{0,0,0,90}
+\definecolor{mint}{rgb}{0, 0.71, 0.678}
+
+
+
+
+% für \floarbarrier, damit man floating-objekte aufhalten kann
+% (z.b. wenn man vor einer neuen section alle floats setzen lassen möchte)
+\usepackage{placeins}
+
+%um das Logo absolut zu Posistionieren
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{0mm}{0mm}
+
+% Absatzeinzug verkleinern
+\setlength{\parindent}{0cm} 
+% abkürzungsverzeichnis
+\usepackage[smaller]{acronym} 
+ 
+% manuelle Worttrennung
+\hyphenation{Ad-mi-nis-tra-tor Get-Re-quest Get-Re-sponse  Get-Next-Request Get-Bulk-Request Pro-gram-mie-rung fast-ether-net hexa-de-zi-mal-en}
+% im Text kann man mit \- Latex anzeigen, wo es trennen kann: Ein\-horn\-schei\.ße
+
+% um das Beispieldokument mit Inhalt zu füllen
+\usepackage{blindtext}
+
+
+%BOXSTYLE
+\usepackage{minted}
+\usemintedstyle{vs}
+
+\usepackage{pdfpages}
+\begin{document}
+
+
+
+%standartumgebung für codelistings setzen
+\lstset{showstringspaces=false,frame=lines,breaklines=true,language=[Sharp]C,numberbychapter=true,captionpos=b,prebreak={\Righttorque},basicstyle=\footnotesize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\mainmatter						% Hauptteil
+\begin{titlepage}
+\input{Chapters/0a_Titlepage.tex}
+\end{titlepage}
+\pagebreak
+%Erklärung
+\chapter*{Eidesstattliche Erklärung}
+\input{Chapters/0b_Erklaerung.tex}
+\thispagestyle{empty} %keine Seitenzahlen
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty} 
+\section*{Abstract}
+\thispagestyle{empty} 
+\input{Chapters/0c_Abstract.tex}
+%% Erzeugung von Verzeichnissen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\renewcommand{\listfigurename}{List of Figures}
+\vspace{-0.5cm}\tableofcontents			% Inhaltsverzeichnis
+\listoftables				% Tabellenverzeichnis
+\listoffigures				% Abbildungsverzeichnis
+%\lstlistoflistings
+%\printnomenclature			% Abkürzungsverzeichnis
+\pagebreak
+\input{Chapters/0d_Abbreviations.tex}
+%
+%
+\chapter{Introduction}
+\label{chap:Intro}
+    \input{Chapters/Kapitel_1.tex}
+\chapter{Fundamentals}
+\label{chap:fundamentals}
+    \input{Chapters/Kapitel_2.tex}
+%% weitere Chapters wird in \chapter{Einleitung}	hinzufügen
+\chapter{Theoretical Part}
+\label{chap:theory}
+    \input{Chapters/Kapitel_3.tex}
+
+\chapter{Practical Part}
+\label{chap:practical}
+    \input{Chapters/Kapitel_4.tex}
+
+\chapter{Evaluation}
+\label{chap:evaluation}
+    \input{Chapters/Kapitel_5.tex}
+    
+\chapter{Summary and Outlook}
+\label{chap:conclusion}
+    \input{Chapters/Kapitel_6.tex}
+\newpage    
+\appendix
+\chapter{Appendix}
+    \label{chap:appendix}
+    \input{Chapters/Appendix.tex}
+%
+%
+%
+%
+%Lieraturverz.
+% \printbibliography[title=Bibliography]
+% \addcontentsline{toc}{chapter}{Bibliography}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title={References}]
+%
+%
+\end{document}
