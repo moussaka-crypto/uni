@@ -1,0 +1,61 @@
+To start the evaluation of this work, the initial research questions need to be taken into account, namely:
+\begin{itemize}
+    \item How well is the Zero Trust security paradigm integrated into a smart home environment?
+    \item Should a Zero Trust smart home network be hosted locally or in the cloud?
+\end{itemize}
+
+This thesis outlines the conceptualization and implementation methodology of two ZT smart home architectures — one in a local environment and the other hosted in the cloud. Despite the fact that both approaches to Zero Trust in smart homes had similar security configurations, the research yielded vastly different insights into the two smart home systems.
+
+\section{Overview}
+The practical implementation of both environments has proven useful in understanding the nature and the constraints of the on-premise and cloud-based concepts of the Zero Trust architectures. Concerning the locally operated solution, the environment setup has proven to be the more complex part, because it requires the acquisition of additional specific hardware from users. Additionally, the entire environment depends on the HA software add-ons \cite{ha_addons} to deliver the desired functionality to the SHS. Nonetheless, the on-premise architecture solution is characterized by a straightforward approach to integrating devices.\\
+On the other hand, in the process of examining the implementation of the cloud architecture, organizing and launching the SHS is more uncomplicated compared to the local one. It constitutes writing a lightweight Terraform script to launch the virtual machine in the cloud service provider (e.g. AWS) and then an additional Shell script to launch the HA software. While adjusting the security configuration is a separate process, the bare minimum setup is still simpler in a cloud environment. However, with regard to the device integration, the implementation of the cloud smart home environment could not establish a pairing procedure with IoT devices. Although the prospect of a virtual gateway has been taken into account, it could not be examined further as part of this work.
+
+\section{Implementation Assessment}
+The implementation of the ZT architectures has proven useful in answering the aforementioned research questions, on top of offering further insight into their applicability.
+In regard to the topic of whether the Zero Trust security paradigm is applicable in a smart home environment and to what extent, the conclusions differ based on the type of environment. What unites the implementations of both the on-premise and cloud solutions is that they opt out for a more balanced approach, aiming to adopt ZT security principles together with the perimeter-based ones.\\
+The on-premise implementation successfully adopted the principle of Multi-factor Authentication by means of modifying the configuration of the HA software (Figure 4.7). Moreover, by realizing a remote VPN tunnel connection to the local environment, the goal of having the environment continuously monitored through traffic analytics has been achieved. With respect to the traditional security features, implementing an IP address ban and a set of firewall rules for the remote VPN connection has also proven to be a success, serving to strengthen the security of the environment. What also gives the on-premise implementation an edge over the cloud-based one is the feature of automatic backups implemented in the Home Assistant operating system, as shown in Figure 4.6.\\
+Be that as it may, the on-premise architecture realization suffers from several drawbacks. A considerable portion of the functionality in this implementation is based on the widely available and open-source Home Assistant add-ons. While this makes the first environment more user-friendly and intuitive to configure, the source code of these plugins cannot be subject to any security guarantees and may pose security vulnerabilities for the smart home environment. In addition to this, even if one ignores the costs for the hardware acquisition and setup process, the connection to the remote tunnel has been inconstant on several occasions, defeating the purpose of its firewall and monitoring features and going against the ease of use of the architecture. In these conditions, the adoption of ZT principles in a smart home environment has proven successful to some extent when combined with perimeter-based security principles. Nevertheless, relative to the core principles of the Zero Trust model outlined in Chapter 2, this implementation has yet to include IAM policies and network segmentation mechanisms for a fully realized ZT network environment.\\
+On the other side of the spectrum, the solution derived from the cloud-based architecture is subject to improvement. On the positive side, the environment is nevertheless able to incorporate the MFA and IP ban mechanisms through the utilized HA software. Furthermore, the combination of Terraform and AWS empowers users to deploy the smart home environment in an EC2 virtual machine, proving to be the most efficient way to modify and apply configuration settings by way of IaC script files. What is achieved differently in this environment is the control over the allowed incoming and outgoing traffic, specifying the ports over which these rules can be enforced (Figure 4.20). In addition, the setup of the environment is realized by a minimal and adjustable setup script, as shown in Figure 4.23, marking this solution as one achieving scalability and hardware independence.\\
+In spite of everything, the core functionalities of a smart home environment could not be realized -- integration of IoT devices into the network and the ability to control them remotely. The exclusion of these features undermines the current setup of the environment, although it can be less difficult to launch at first. In this context, the HA software has been hosted as a container in contrast to the local setup, due to the lack of a proprietary AMI for this use case. Prompting users to create their own tailored OS image for the EC2 instance further complicates the cloud-based implementation and serves to counteract the aforementioned benefits of the cloud architecture. With regard to all these details, the verdict for this environment in the overall context of Zero Trust is that it is still in need of improvement. Although one of the four main ZT principles has been implemented, the dependence on perimeter-based configuration persists within this implementation.\\
+To provide an answer to the second research question, the locally hosted smart home environment is better suited to hosting a Zero Trust smart home network, based on the aforementioned analysis of both environments. Not only does it implement more of the ZT framework's principles, but it also has a better resolution as a standalone smart home environment compared to its cloud variant.
+% balance between security and user-friendliness needed
+
+% assumptions section based on metrics in Chapter 3
+\section{Metric Evaluation} 
+As a conclusion for the evaluation of this thesis and its results, a short assessment of both categories of metrics is presented. The first table defines the security goals of the smart home architectures as metrics, which are then individually assessed on whether and to what extent the target metric was realized. Regarding the second table, it provides an assessment of how the secondary metrics relate to both the on-premise and cloud Zero Trust smart home architectures and their implementations. 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{4cm}|p{8cm}|}
+        \hline
+        Metric & Assessment \\
+        \hline 
+        Device Integrity & In the on-premise environment, there has not been a registered instance of changes in the stored information as a form of sabotage for the collection of IoT devices. \\
+        \hline
+        Device Availability & In the on-premise environment, there has not been a registered instance of the user not being able to modify the information and configuration for the collection of IoT devices. \\
+        \hline
+        Automatic Updates & The system and add-on settings as part of the Home Assistant operating system provide users with the ability to enable automatic updates for the collection of services and add-ons in the on-premise environment. The update of the cloud environment is done by the users. \\
+        \hline
+        Automatic Backups & In the on-premise environment, an automatic backup of the system configuration is made after installation. Any further backups of the systems in both environments is done by the users.\\
+        \hline
+        Device Alarms and Monitoring & The ability to monitor the data from IoT devices is achieved through a dashboard in the HA software. More details about the state of single devices can be discovered from the device settings in Home Assistant. Device alarms have not been implemented. \\
+        \hline
+    \end{tabular}
+    \caption{Security Metrics Evaluation Table}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{4cm}|p{8cm}|}
+        \hline
+        Metric & Assessment \\
+        \hline
+        Duration of start-up phase & Both implementations of the smart home architectures had a relatively short start-up phase as a result of excellent documentation of the employed services. In the comparison of both environments however, the cloud-based one has a shorter start-up phase on account of the script-based configuration process of the EC2 virtual machine through Terraform. \\
+        \hline
+        Platform Support & The local environment's central platform is Home Assistant, which gives users the ability to easily adjust and backup their system configuration, and also offered a way to easily implement multi-factor authentication. The cloud-based environment's main platform being AWS, means that users have access to a plethora of tools to finetune and enhance the management and security of the EC2 environment. \\
+        \hline
+        Platform Complexity & Home Assistant offers a wide functionality and support for services and add-ons, most of which incredibly well documented to make their integration into the on-premise environment straightforward. With regard to AWS, while it offers a larger functionality than Home Assistant, the overabundance of those features could cause difficulties to realize a comprehensive smart home implementation. \\
+        \hline
+    \end{tabular}
+    \caption{Secondary Metrics Evaluation Table}
+\end{table}

@@ -1,0 +1,161 @@
+- id: '1727968751180'
+  alias: New automation
+  description: ''
+  triggers:
+  - type: changed_states
+    device_id: 8b328935fac9e71a45fd00d804af0c4d
+    entity_id: 51ee7724d1804e137099ffc5e6352a61
+    domain: light
+    trigger: device
+  conditions: []
+  actions: []
+  mode: single
+- id: '1728899485980'
+  alias: 'Bulb 1 automation '
+  description: Turns on when control outlet is turned on, then switches off after
+    a second
+  triggers: []
+  conditions: []
+  actions: []
+  mode: single
+- id: '1728903320572'
+  alias: Turn on control outlet
+  description: Turns on the control outlet with the on/off switch
+  triggers:
+  - domain: mqtt
+    device_id: b2913f5a56302e33950f87037875377a
+    type: action
+    subtype: 'on'
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_off
+    device_id: 4149645e366a4da80cfaac164176ea3d
+    entity_id: e2b5a96f57bdfe7f703ca8c859f69fe3
+    domain: switch
+  actions:
+  - type: turn_on
+    device_id: 4149645e366a4da80cfaac164176ea3d
+    entity_id: e2b5a96f57bdfe7f703ca8c859f69fe3
+    domain: switch
+  mode: single
+- id: '1728903678477'
+  alias: Turn off control outlet
+  description: Turns off the control outlet with the on/off switch
+  triggers:
+  - domain: mqtt
+    device_id: b2913f5a56302e33950f87037875377a
+    type: action
+    subtype: 'off'
+    metadata: {}
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_on
+    device_id: 4149645e366a4da80cfaac164176ea3d
+    entity_id: e2b5a96f57bdfe7f703ca8c859f69fe3
+    domain: switch
+  actions:
+  - type: turn_off
+    device_id: 4149645e366a4da80cfaac164176ea3d
+    entity_id: e2b5a96f57bdfe7f703ca8c859f69fe3
+    domain: switch
+  mode: single
+- id: '1728921907353'
+  alias: Bulb 1 as signal for outlet
+  description: Turns the light bulb 1 when the outlet is turned on and after 3 sec
+    it turns the bulb off.
+  triggers:
+  - type: turned_on
+    device_id: 4149645e366a4da80cfaac164176ea3d
+    entity_id: e2b5a96f57bdfe7f703ca8c859f69fe3
+    domain: switch
+    trigger: device
+  conditions:
+  - condition: state
+    entity_id: binary_sensor.zigbee2mqtt_bridge_connection_state
+    state: 'on'
+  actions:
+  - alias: Signal when bulb 1 is off
+    if:
+    - condition: device
+      type: is_off
+      device_id: 56fd19263dc28a09025ca62f935bdc57
+      entity_id: 0e3baef9e76a42a740fdf6b153ba1a06
+      domain: light
+    then:
+    - sequence:
+      - action: light.turn_on
+        metadata: {}
+        data:
+          effect: blink
+        target:
+          device_id: 56fd19263dc28a09025ca62f935bdc57
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 1
+          milliseconds: 500
+      - action: light.turn_off
+        metadata: {}
+        data: {}
+        target:
+          device_id: 56fd19263dc28a09025ca62f935bdc57
+      enabled: true
+    else:
+    - action: light.turn_on
+      metadata: {}
+      data:
+        effect: blink
+      target:
+        device_id: 56fd19263dc28a09025ca62f935bdc57
+  mode: single
+- id: '1728982503304'
+  alias: SIgnal for Zigbee2MQTT connection start
+  description: Uses Ikea bulb 2 as signal light for when there is a connection to
+    Zigbee2MQTT
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.zigbee2mqtt_bridge_connection_state
+    from:
+    to: 'on'
+  conditions: []
+  actions:
+  - alias: Signal for connection
+    if:
+    - condition: device
+      type: is_off
+      device_id: 765254481d1a0f49216db8abdfb76c9c
+      entity_id: 0166a60fba5a366cc5d42e6571d40809
+      domain: light
+    then:
+    - sequence:
+      - action: light.turn_on
+        metadata: {}
+        data:
+          effect: blink
+        target:
+          device_id: 765254481d1a0f49216db8abdfb76c9c
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 2
+          milliseconds: 123
+      - action: light.turn_off
+        metadata: {}
+        data: {}
+        target:
+          device_id: 765254481d1a0f49216db8abdfb76c9c
+    else:
+    - action: light.turn_on
+      metadata: {}
+      data:
+        effect: blink
+      target:
+        device_id: 765254481d1a0f49216db8abdfb76c9c
+    - type: turn_off
+      device_id: 765254481d1a0f49216db8abdfb76c9c
+      entity_id: 0166a60fba5a366cc5d42e6571d40809
+      domain: light
+  mode: single
