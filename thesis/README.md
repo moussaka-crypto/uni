@@ -13,10 +13,6 @@
 ### Date:
 **14. April 2025** 🚬
 
-### Supervisors:
-- **Prof. Dr. Georg Neugebauer**
-- **M.Eng. Sacha Hack**
-
 ---
 
 This document presents a comprehensive study on Zero Trust Security Architectures in Smart Home Environments, submitted as part of the requirements for the Bachelor's degree in Computer Science at FH Aachen.
